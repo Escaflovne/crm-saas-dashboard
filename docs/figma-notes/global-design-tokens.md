@@ -77,11 +77,11 @@ is currently blocked by plan tool-call limits.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Header/H1 / Lato Bold | Lato | 32px | 42px | Bold (700) | TBD | Right | Confirmed from Copy-as-CSS |
 | Header/H2 / Lato Bold | Lato | 26px | 38px | Bold (700) | TBD | Center | Confirmed from Copy-as-CSS |
-| Header/H3 / Lato Bold | Lato | 20px | 32px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
-| Header/H4 / Lato Bold | Lato | 18px | 27px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
-| Header/H5 / Lato Bold | Lato | 16px | 24px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
+| Header/H3 / Lato Bold | Lato | 20px | 32px | Bold (700) | TBD | Center | Confirmed from Copy-as-CSS |
+| Header/H4 / Lato Bold | Lato | 18px | 27px | Bold (700) | TBD | Center | Confirmed from Copy-as-CSS |
+| Header/H5 / Lato Bold | Lato | 16px | 24px | Bold (700) | TBD | Center | Confirmed from Copy-as-CSS |
 | Caption / Lato Black | Lato | 14px | 17px | Black (900) | 0px | TBD | Confirmed from Copy-as-CSS |
-| Buttons/Label 14px / Lato Bold | Lato | 14px | Auto | Bold (numeric TBD) | TBD | Left, Center | Confirmed from Figma Inspect |
+| Buttons/Label 14px / Lato Bold | Lato | 14px | Auto | Bold (700) | TBD | Left, Center | Inspect and Copy-as-CSS confirm multiple label instances; line-height and fill vary by instance |
 | Buttons / Label 12px / Lato Bold | Lato | 12px | 14px | Bold (700) | TBD | Left, Center | Center instance confirmed from Copy-as-CSS |
 | Text/14px/Bold / Lato Bold | Lato | 14px | 21px | Bold (700) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
 | Text / 14px / Regular / Lato Regular | Lato | 14px | 21px | Regular (400) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
@@ -104,7 +104,8 @@ Confirmed typography fills from Figma Inspect screenshots and Copy-as-CSS:
 - Text / 14px / Regular: `#1C1D21`
 - Text / 12px / Regular: `#1C1D21`
 - Text / 12px / Bold: `#1C1D21`
-- Buttons/Label 14px: `#5E81F4`
+- Buttons/Label 14px primary/blue instance: `#5E81F4`
+- Buttons/Label 14px dark instance: `#1C1D21`
 - Secondary text / 14px: `#5E81F4`
 - Secondary text / 12px / Regular: `#F4BE5E`
 - Secondary text / 12px / Bold: `#5E81F4`
