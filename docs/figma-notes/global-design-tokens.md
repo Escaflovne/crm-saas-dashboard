@@ -53,7 +53,10 @@ inspection confirms usage.
 
 Document the font assets and the type ramp as defined in Figma.
 
-- Font family (primary): TBD (target asset is `@fontsource/lato`)
+The Typography screenshot confirms Lato as the primary font family. Exact type
+style values must come from Figma Inspect and remain TBD until inspected.
+
+- Font family (primary): Lato (target asset is `@fontsource/lato`)
 - Font family (secondary, if any): TBD
 - Font weights in use: TBD
 - Font sizes / type scale: TBD
@@ -61,6 +64,21 @@ Document the font assets and the type ramp as defined in Figma.
 - Letter spacing: TBD
 - Heading styles (h1–h6): TBD
 - Body styles (body, body-sm, caption, label): TBD
+
+| Figma label | Font family | Font size | Line height | Font weight | Letter spacing | Text alignment variants | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| H1 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| H2 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| H3 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| H4 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| H5 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| Caption | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| Button label 14 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| Button label 12 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| Regular text 14 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| Regular text 12 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| Secondary text 14 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
+| Secondary text 12 | Lato | TBD | TBD | TBD | TBD | TBD | Needs Figma Inspect |
 
 ## Spacing Scale
 
