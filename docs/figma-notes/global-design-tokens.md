@@ -59,42 +59,51 @@ variants. Exact numeric implementation values must come from Figma Inspect and
 remain TBD until inspected.
 
 Oskar's Figma Inspect screenshots confirm the first exact typography values
-below. These values are transcribed from screenshots because direct Figma MCP
-inspection is currently blocked by plan tool-call limits.
+below. Some values are also confirmed by Copy-as-CSS output. These values are
+transcribed from screenshots and Copy-as-CSS because direct Figma MCP inspection
+is currently blocked by plan tool-call limits.
 
 - Font family (primary): Lato (target asset is `@fontsource/lato`)
 - Font family (secondary, if any): TBD
 - Visible Lato style labels: Regular, Bold, Black
-- Numeric font weights: TBD
-- Font sizes / type scale: TBD
-- Line heights: TBD
+- Numeric font weights: partially confirmed; remaining values TBD
+- Font sizes / type scale: partially confirmed; remaining values TBD
+- Line heights: partially confirmed; remaining values TBD
 - Letter spacing: TBD
-- Heading styles (h1–h6): TBD
-- Body styles (body, body-sm, caption, label): TBD
+- Heading styles (h1–h5): partially confirmed; remaining heading values TBD
+- Body styles (body, body-sm, caption, label): partially confirmed; remaining body values TBD
 
 | Figma label | Font family | Font size | Line height | Font weight | Letter spacing | Text alignment variants | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Header/H1 / Lato Bold | Lato | 32px | 42px | Bold (numeric TBD) | TBD | TBD | Size/line height confirmed from Figma Inspect screenshot |
-| Header/H2 / Lato Bold | Lato | 26px | 38px | Bold (numeric TBD) | TBD | TBD | Size/line height confirmed from Figma Inspect screenshot |
-| H3 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
-| H4 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
-| H5 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
-| Caption / Lato Black | Lato | TBD | TBD | Black (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
-| Buttons/Label 14px / Lato Bold | Lato | 14px | Auto | Bold (numeric TBD) | TBD | Left, Center | Size/line height confirmed from Figma Inspect screenshot |
-| Button Label / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | Left, Center | Visible size/style/alignment; needs Figma Inspect |
-| Text/14px/Bold / Lato Bold | Lato | 14px | 21px | Bold (numeric TBD) | TBD | Left, Center, Right | Size/line height confirmed from Figma Inspect screenshot |
-| Regular text / 14px / Lato Regular | Lato | 14px | TBD | Regular (numeric TBD) | TBD | Left, Center, Right | Visible size/style/alignment; needs Figma Inspect |
-| Regular text / 12px / Lato Regular | Lato | 12px | TBD | Regular (numeric TBD) | TBD | Left, Center, Right | Visible size/style/alignment; needs Figma Inspect |
-| Regular text / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | Left, Center, Right | Visible size/style/alignment; needs Figma Inspect |
-| Secondary text / 14px / Lato Bold | Lato | 14px | TBD | Bold (numeric TBD) | TBD | TBD | Visible size/style; needs Figma Inspect |
-| Secondary text / 12px / Lato Regular | Lato | 12px | TBD | Regular (numeric TBD) | TBD | TBD | Visible size/style; needs Figma Inspect |
-| Secondary text / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | TBD | Visible size/style; needs Figma Inspect |
+| Header/H1 / Lato Bold | Lato | 32px | 42px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
+| Header/H2 / Lato Bold | Lato | 26px | 38px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
+| Header/H3 / Lato Bold | Lato | 20px | 32px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
+| Header/H4 / Lato Bold | Lato | 18px | 27px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
+| Header/H5 / Lato Bold | Lato | 16px | 24px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
+| Caption / Lato Black | Lato | 14px | 17px | Black (900) | 0px | TBD | Confirmed from Copy-as-CSS |
+| Buttons/Label 14px / Lato Bold | Lato | 14px | Auto | Bold (numeric TBD) | TBD | Left, Center | Confirmed from Figma Inspect |
+| Buttons / Label 12px / Lato Bold | Lato | 12px | 14px | Bold (700) | TBD | Left, Center | Center instance confirmed from Copy-as-CSS |
+| Text/14px/Bold / Lato Bold | Lato | 14px | 21px | Bold (numeric TBD) | TBD | Left, Center, Right | Confirmed from Figma Inspect |
+| Text / 14px / Regular / Lato Regular | Lato | 14px | 21px | Regular (400) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
+| Text / 12px / Regular / Lato Regular | Lato | 12px | 18px | Regular (400) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
+| Text / 12px / Bold / Lato Bold | Lato | 12px | 18px | Bold (700) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
+| Secondary text / 14px / Lato Bold | Lato | 14px | TBD | Bold (numeric TBD) | TBD | TBD | Partially confirmed; remaining values TBD |
+| Secondary text / 12px / Lato Regular | Lato | 12px | TBD | Regular (numeric TBD) | TBD | TBD | Partially confirmed; remaining values TBD |
+| Secondary text / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | TBD | Partially confirmed; remaining values TBD |
 
-Confirmed typography fills from Oskar's Figma Inspect screenshots:
+Confirmed typography fills from Figma Inspect screenshots and Copy-as-CSS:
 
 - Header/H1: `#1C1D21`
 - Header/H2: `#1C1D21`
+- Header/H3: `#1C1D21`
+- Header/H4: `#1C1D21`
+- Header/H5: `#1C1D21`
+- Caption / Lato Black: `#1C1D21`
+- Buttons / Label 12px: `#1C1D21`
 - Text/14px/Bold: `#1C1D21`
+- Text / 14px / Regular: `#1C1D21`
+- Text / 12px / Regular: `#1C1D21`
+- Text / 12px / Bold: `#1C1D21`
 - Buttons/Label 14px: `#5E81F4`
 
 ## Spacing Scale
@@ -130,4 +139,4 @@ Document the spacing scale as defined in Figma. Use the exact step values.
 List anything that is unclear, inconsistent, or missing from Figma so it can be
 resolved before token implementation begins.
 
-- TBD
+- No additional open questions beyond table-level TBD values.
