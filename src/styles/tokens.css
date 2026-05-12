@@ -1,0 +1,47 @@
+:root {
+  --color-primary: #5E81F4;
+  --color-primary-dark: #1C1D21;
+  --color-primary-grey: #8181A5;
+  --color-outline: #F0F0F3;
+  --color-background-light: #F5F5FA;
+  --color-primary-outline: #5E81F4;
+  --color-background: #F6F6F6;
+  --color-background-white: #FFFFFF;
+  --color-outline-white: #FFFFFF;
+  --color-secondary-yellow: #F4BE5E;
+  --color-secondary-green: #7CE7AC;
+  --color-secondary-red: #FF808B;
+  --color-secondary-purple: #9698D6;
+  --color-secondary-cyan: #40E1FA;
+  --color-resting-outline: #ECECF2;
+
+  --font-family-primary: "Lato", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --font-size-header-h1: 32px;
+  --line-height-header-h1: 42px;
+  --font-size-header-h2: 26px;
+  --line-height-header-h2: 38px;
+  --font-size-header-h3: 20px;
+  --line-height-header-h3: 32px;
+  --font-size-header-h4: 18px;
+  --line-height-header-h4: 27px;
+  --font-size-header-h5: 16px;
+  --line-height-header-h5: 24px;
+  --font-size-caption: 14px;
+  --line-height-caption: 17px;
+  --letter-spacing-caption: 0px;
+  --font-size-button-label-14: 14px;
+  --font-size-button-label-12: 12px;
+  --line-height-button-label-12: 14px;
+  --font-size-text-14: 14px;
+  --line-height-text-14: 21px;
+  --font-size-text-12: 12px;
+  --line-height-text-12: 18px;
+  --font-size-secondary-text-14: 14px;
+  --line-height-secondary-text-14: 21px;
+  --font-size-secondary-text-12: 12px;
+  --line-height-secondary-text-12: 18px;
+}
