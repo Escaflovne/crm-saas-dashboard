@@ -87,9 +87,9 @@ is currently blocked by plan tool-call limits.
 | Text / 14px / Regular / Lato Regular | Lato | 14px | 21px | Regular (400) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
 | Text / 12px / Regular / Lato Regular | Lato | 12px | 18px | Regular (400) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
 | Text / 12px / Bold / Lato Bold | Lato | 12px | 18px | Bold (700) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
-| Secondary text / 14px / Lato Bold | Lato | 14px | TBD | Bold (numeric TBD) | TBD | TBD | Partially confirmed; remaining values TBD |
-| Secondary text / 12px / Lato Regular | Lato | 12px | TBD | Regular (numeric TBD) | TBD | TBD | Partially confirmed; remaining values TBD |
-| Secondary text / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | TBD | Partially confirmed; remaining values TBD |
+| Secondary text / 14px / Lato Bold | Lato | 14px | 21px | Bold (700) | TBD | Center | Center instance confirmed from Copy-as-CSS |
+| Secondary text / 12px / Lato Regular | Lato | 12px | 18px | Regular (400) | TBD | Center | Center instance confirmed from Copy-as-CSS |
+| Secondary text / 12px / Lato Bold | Lato | 12px | 18px | Bold (700) | TBD | Center | Center instance confirmed from Copy-as-CSS |
 
 Confirmed typography fills from Figma Inspect screenshots and Copy-as-CSS:
 
@@ -105,6 +105,9 @@ Confirmed typography fills from Figma Inspect screenshots and Copy-as-CSS:
 - Text / 12px / Regular: `#1C1D21`
 - Text / 12px / Bold: `#1C1D21`
 - Buttons/Label 14px: `#5E81F4`
+- Secondary text / 14px: `#5E81F4`
+- Secondary text / 12px / Regular: `#F4BE5E`
+- Secondary text / 12px / Bold: `#5E81F4`
 
 ## Spacing Scale
 
