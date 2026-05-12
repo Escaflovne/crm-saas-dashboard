@@ -1,59 +1,62 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import NotFoundPage from "./routes/NotFoundPage";
+import RootPage from "./routes/RootPage";
+import RecoverPage from "./routes/auth/RecoverPage";
+import SignInPage from "./routes/auth/SignInPage";
+import SignUpDetailsPage from "./routes/auth/SignUpDetailsPage";
+import SignUpFinishPage from "./routes/auth/SignUpFinishPage";
+import SignUpPage from "./routes/auth/SignUpPage";
+import DashboardContactsPage from "./routes/dashboard/DashboardContactsPage";
+import DashboardEmptyPage from "./routes/dashboard/DashboardEmptyPage";
+import DashboardFinancePage from "./routes/dashboard/DashboardFinancePage";
+import DashboardPage from "./routes/dashboard/DashboardPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <RoutePlaceholder title="CRM SaaS Dashboard" />,
+    element: <RootPage />,
   },
   {
     path: "/sign-in",
-    element: <RoutePlaceholder title="Sign In" />,
+    element: <SignInPage />,
   },
   {
     path: "/recover",
-    element: <RoutePlaceholder title="Recover Account" />,
+    element: <RecoverPage />,
   },
   {
     path: "/sign-up",
-    element: <RoutePlaceholder title="Sign Up" />,
+    element: <SignUpPage />,
   },
   {
     path: "/sign-up/details",
-    element: <RoutePlaceholder title="Sign Up Details" />,
+    element: <SignUpDetailsPage />,
   },
   {
     path: "/sign-up/finish",
-    element: <RoutePlaceholder title="Sign Up Finish" />,
+    element: <SignUpFinishPage />,
   },
   {
     path: "/dashboard",
-    element: <RoutePlaceholder title="Dashboard" />,
+    element: <DashboardPage />,
   },
   {
     path: "/dashboard/contacts",
-    element: <RoutePlaceholder title="Contacts" />,
+    element: <DashboardContactsPage />,
   },
   {
     path: "/dashboard/finance",
-    element: <RoutePlaceholder title="Finance" />,
+    element: <DashboardFinancePage />,
   },
   {
     path: "/dashboard/empty",
-    element: <RoutePlaceholder title="Empty State" />,
+    element: <DashboardEmptyPage />,
   },
   {
     path: "*",
-    element: <RoutePlaceholder title="Not Found" />,
+    element: <NotFoundPage />,
   },
 ]);
-
-function RoutePlaceholder({ title }: { title: string }) {
-  return (
-    <main>
-      <h1>{title}</h1>
-    </main>
-  );
-}
 
 export default function App() {
   return <RouterProvider router={router} />;
