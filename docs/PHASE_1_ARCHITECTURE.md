@@ -108,6 +108,8 @@ src/
     utils/
     validation/
   routes/
+    RootPage.tsx
+    NotFoundPage.tsx
     auth/
     dashboard/
   stores/
