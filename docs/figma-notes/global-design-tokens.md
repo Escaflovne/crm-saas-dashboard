@@ -58,6 +58,10 @@ visible style categories, size labels, Lato style labels, and alignment
 variants. Exact numeric implementation values must come from Figma Inspect and
 remain TBD until inspected.
 
+Oskar's Figma Inspect screenshots confirm the first exact typography values
+below. These values are transcribed from screenshots because direct Figma MCP
+inspection is currently blocked by plan tool-call limits.
+
 - Font family (primary): Lato (target asset is `@fontsource/lato`)
 - Font family (secondary, if any): TBD
 - Visible Lato style labels: Regular, Bold, Black
@@ -70,21 +74,28 @@ remain TBD until inspected.
 
 | Figma label | Font family | Font size | Line height | Font weight | Letter spacing | Text alignment variants | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| H1 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
-| H2 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
+| Header/H1 / Lato Bold | Lato | 32px | 42px | Bold (numeric TBD) | TBD | TBD | Size/line height confirmed from Figma Inspect screenshot |
+| Header/H2 / Lato Bold | Lato | 26px | 38px | Bold (numeric TBD) | TBD | TBD | Size/line height confirmed from Figma Inspect screenshot |
 | H3 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
 | H4 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
 | H5 / Lato Bold | Lato | TBD | TBD | Bold (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
 | Caption / Lato Black | Lato | TBD | TBD | Black (numeric TBD) | TBD | TBD | Visible category; needs Figma Inspect |
-| Button Label / 14px / Lato Bold | Lato | 14px | TBD | Bold (numeric TBD) | TBD | Left, Center | Visible size/style/alignment; needs Figma Inspect |
+| Buttons/Label 14px / Lato Bold | Lato | 14px | Auto | Bold (numeric TBD) | TBD | Left, Center | Size/line height confirmed from Figma Inspect screenshot |
 | Button Label / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | Left, Center | Visible size/style/alignment; needs Figma Inspect |
-| Regular text / 14px / Lato Bold | Lato | 14px | TBD | Bold (numeric TBD) | TBD | Left, Center, Right | Visible size/style/alignment; needs Figma Inspect |
+| Text/14px/Bold / Lato Bold | Lato | 14px | 21px | Bold (numeric TBD) | TBD | Left, Center, Right | Size/line height confirmed from Figma Inspect screenshot |
 | Regular text / 14px / Lato Regular | Lato | 14px | TBD | Regular (numeric TBD) | TBD | Left, Center, Right | Visible size/style/alignment; needs Figma Inspect |
 | Regular text / 12px / Lato Regular | Lato | 12px | TBD | Regular (numeric TBD) | TBD | Left, Center, Right | Visible size/style/alignment; needs Figma Inspect |
 | Regular text / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | Left, Center, Right | Visible size/style/alignment; needs Figma Inspect |
 | Secondary text / 14px / Lato Bold | Lato | 14px | TBD | Bold (numeric TBD) | TBD | TBD | Visible size/style; needs Figma Inspect |
 | Secondary text / 12px / Lato Regular | Lato | 12px | TBD | Regular (numeric TBD) | TBD | TBD | Visible size/style; needs Figma Inspect |
 | Secondary text / 12px / Lato Bold | Lato | 12px | TBD | Bold (numeric TBD) | TBD | TBD | Visible size/style; needs Figma Inspect |
+
+Confirmed typography fills from Oskar's Figma Inspect screenshots:
+
+- Header/H1: `#1C1D21`
+- Header/H2: `#1C1D21`
+- Text/14px/Bold: `#1C1D21`
+- Buttons/Label 14px: `#5E81F4`
 
 ## Spacing Scale
 
