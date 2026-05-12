@@ -19,6 +19,15 @@ this repository.
 - Do not change `package.json` unless explicitly requested.
 - Do not make commits unless explicitly approved.
 
+## Current Migration Target
+
+- The target application is a Vite React TypeScript SPA.
+- The repository was originally scaffolded as Next.js and must be migrated
+  through explicit nano-tickets.
+- After migration, do not use `next/*` imports.
+- After migration, do not use framework file-based routing; declare routes in
+  `src/App.tsx` with React Router.
+
 ## Verification
 
 Run verification after every change:

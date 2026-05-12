@@ -1,17 +1,21 @@
 # Phase 1 Architecture
 
-This project is a Next.js 15 CRM SaaS Dashboard based on a Figma CRM UI Kit.
-Phase 1 establishes the application architecture before UI or application logic
-is implemented. Work must proceed through nano-tickets, not broad sprint-sized
-implementation.
+This project is a CRM SaaS Dashboard based on a Figma CRM UI Kit. The senior
+architecture decision is to migrate from the current Next.js scaffold to a pure
+React + TypeScript single-page application built with Vite.
+
+The current repository was originally scaffolded as Next.js. Do not delete
+Next.js files, remove dependencies, or rewrite runtime code until an explicit
+migration nano-ticket requests that step.
 
 ## Final Tech Stack
 
-Phase 1 targets these pinned major versions:
+Phase 1 targets these pinned major versions and constraints:
 
-- Next.js 15.x with the App Router, not Next.js 16.
-- React 19.x through the Next.js 15 application baseline.
+- Vite 5.x.
+- React 19.x.
 - TypeScript 5.x with strict mode enabled.
+- React Router 7.x with the Data Router API.
 - CSS Modules with BEM class naming and CSS custom properties.
 - Recharts 2.x for charts.
 - TanStack Table v8 for data tables.
@@ -21,14 +25,35 @@ Phase 1 targets these pinned major versions:
 - date-fns 3.x for date formatting and date utilities.
 - `@faker-js/faker` 8.x for deterministic mock data.
 - `lucide-react` for icons.
+- `@fontsource/lato` for the Lato font assets.
 - ESLint flat config, Prettier, Husky, and lint-staged for code quality.
 
-Dependencies that are not already installed must be added only in an explicit
-dependency ticket.
+The target app must not use Next.js, SSR, React Server Components, or `next/*`
+imports after migration. Dependencies that are not already installed must be
+added only in explicit dependency nano-tickets.
+
+## Runtime Model
+
+- The app is a client-rendered SPA.
+- There is no SSR.
+- There are no React Server Components.
+- Browser routing is handled by React Router.
+- Routes are declared in `src/App.tsx`.
+- The application entry point is `src/main.tsx`.
+- The global CSS entry is `src/styles/global.css`.
+
+## Target Package Scripts
+
+After the Vite migration, package scripts should use these commands:
+
+- `dev`: `vite`
+- `build`: `tsc -b && vite build`
+- `preview`: `vite preview`
+- `lint`: `eslint .`
 
 ## Routes
 
-Phase 1 targets these routes:
+Phase 1 targets these public routes:
 
 - `/sign-in`
 - `/recover`
@@ -40,54 +65,18 @@ Phase 1 targets these routes:
 - `/dashboard/finance`
 - `/dashboard/empty`
 
-The sign-up flow is three steps: account entry, details, and finish.
-The `/dashboard/empty` route is a demo route for the reusable empty state.
-Route groups in parentheses organize files only and do not create URL segments.
+The sign-up flow is three steps: account entry, details, and finish. The
+`/dashboard/empty` route is a demo route for the reusable empty state.
 
-```text
-src/app/
-├── (auth)/
-│   ├── sign-in/page.tsx          # /sign-in
-│   ├── recover/page.tsx          # /recover
-│   └── sign-up/
-│       ├── page.tsx              # /sign-up
-│       ├── details/page.tsx      # /sign-up/details
-│       └── finish/page.tsx       # /sign-up/finish
-└── (app)/
-    └── dashboard/
-        ├── page.tsx              # /dashboard
-        ├── contacts/page.tsx     # /dashboard/contacts
-        ├── finance/page.tsx      # /dashboard/finance
-        └── empty/page.tsx        # /dashboard/empty
-```
+Routes should be defined in the React Router route configuration in
+`src/App.tsx`; do not rely on file-based routing after migration.
 
 ## Target Folder Structure
 
 ```text
 src/
-  app/
-    (auth)/
-      recover/
-        page.tsx
-      sign-in/
-        page.tsx
-      sign-up/
-        page.tsx
-        details/
-          page.tsx
-        finish/
-          page.tsx
-    (app)/
-      dashboard/
-        page.tsx
-        contacts/
-          page.tsx
-        empty/
-          page.tsx
-        finance/
-          page.tsx
-    layout.tsx
-    page.tsx
+  App.tsx
+  main.tsx
   components/
     ui/
       Button/
@@ -102,50 +91,36 @@ src/
         index.ts
     auth/
     dashboard/
-      DashboardShell/
-      EmptyState/
-      MetricCard/
-      Sidebar/
-      Topbar/
-    charts/
-    forms/
-    tables/
-  features/
-    auth/
-      components/
-      schemas/
-      stores/
-    dashboard/
       analytics/
       contacts/
       finance/
+      shared/
+    layouts/
+    providers/
+  hooks/
+    queries/
   lib/
+    constants/
     mock-api/
+      endpoints/
     mock-data/
-    query-keys/
+      generators/
+    utils/
     validation/
+  routes/
+    auth/
+    dashboard/
   stores/
     useAuthStore.ts
     useDashboardStore.ts
     useSignUpStore.ts
   styles/
+    global.css
     reset.css
     tokens.css
     typography.css
     utilities.css
   types/
-```
-
-The Next.js root layout imports `src/app/globals.css`. That file remains the
-global CSS entrypoint and should import the global style layers from
-`src/styles`.
-
-```text
-src/app/globals.css
-src/styles/reset.css
-src/styles/tokens.css
-src/styles/typography.css
-src/styles/utilities.css
 ```
 
 Folders should be introduced only when a nano-ticket needs them.
@@ -170,8 +145,11 @@ Phase 1 uses mock data behind API-like boundaries so the backend can be swapped
 later without rewriting components.
 
 - `src/lib/mock-data`: deterministic fake records and fixture builders.
+- `src/lib/mock-data/generators`: generators for repeatable mock datasets.
 - `src/lib/mock-api`: async functions that simulate backend calls.
-- `src/lib/query-keys`: stable TanStack Query key factories.
+- `src/lib/mock-api/endpoints`: endpoint-shaped mock modules.
+- `src/lib/query-keys`: stable TanStack Query key factories when query hooks
+  are introduced.
 - Async mock APIs should simulate loading states with small delays.
 - Components should consume query hooks or API wrappers, not raw mock data.
 - Future backend swaps should replace mock API implementations while preserving
@@ -207,10 +185,10 @@ src/styles/typography.css
 src/styles/utilities.css
 ```
 
-The imported global CSS entry remains:
+The imported global CSS entry is:
 
 ```text
-src/app/globals.css
+src/styles/global.css
 ```
 
 Use global tokens for color, typography, spacing, sizing, radii, shadows, and
@@ -262,6 +240,7 @@ reviewable, and independently verified.
 Example sequence:
 
 - Documentation and architecture.
+- Migration nano-tickets.
 - Global tokens.
 - Button.
 - IconButton.
@@ -269,7 +248,7 @@ Example sequence:
 - Form field.
 - Card.
 - EmptyState.
-- DashboardShell.
+- App shell.
 - Auth layout.
 - Sign-in form.
 - Recover form.
@@ -286,15 +265,17 @@ and verification commands.
 
 ## Future Extensibility
 
-New dashboard modules should be added by creating a route under `src/app`, a
-feature folder under `src/features`, and module-specific components that reuse
+New dashboard modules should be added by creating a route entry in `src/App.tsx`,
+a route module under `src/routes`, and module-specific components that reuse
 shared dashboard primitives. Shared abstractions should be extracted only after
 two or more modules prove the same need.
 
 To add a new module later:
 
-- Add a new route under `src/app/(app)/dashboard`.
-- Add feature logic under `src/features/<module>`.
+- Add a new React Router route in `src/App.tsx`.
+- Add route code under `src/routes/<module>`.
+- Add feature logic under `src/features/<module>` if a feature boundary is
+  needed.
 - Add mock data and mock API functions behind existing query patterns.
 - Reuse shell, token, table, chart, and empty-state primitives.
 - Avoid changing existing modules unless their public contracts need to evolve.
