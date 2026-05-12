@@ -75,15 +75,15 @@ is currently blocked by plan tool-call limits.
 
 | Figma label | Font family | Font size | Line height | Font weight | Letter spacing | Text alignment variants | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Header/H1 / Lato Bold | Lato | 32px | 42px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
-| Header/H2 / Lato Bold | Lato | 26px | 38px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
+| Header/H1 / Lato Bold | Lato | 32px | 42px | Bold (700) | TBD | Right | Confirmed from Copy-as-CSS |
+| Header/H2 / Lato Bold | Lato | 26px | 38px | Bold (700) | TBD | Center | Confirmed from Copy-as-CSS |
 | Header/H3 / Lato Bold | Lato | 20px | 32px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
 | Header/H4 / Lato Bold | Lato | 18px | 27px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
 | Header/H5 / Lato Bold | Lato | 16px | 24px | Bold (numeric TBD) | TBD | TBD | Confirmed from Figma Inspect |
 | Caption / Lato Black | Lato | 14px | 17px | Black (900) | 0px | TBD | Confirmed from Copy-as-CSS |
 | Buttons/Label 14px / Lato Bold | Lato | 14px | Auto | Bold (numeric TBD) | TBD | Left, Center | Confirmed from Figma Inspect |
 | Buttons / Label 12px / Lato Bold | Lato | 12px | 14px | Bold (700) | TBD | Left, Center | Center instance confirmed from Copy-as-CSS |
-| Text/14px/Bold / Lato Bold | Lato | 14px | 21px | Bold (numeric TBD) | TBD | Left, Center, Right | Confirmed from Figma Inspect |
+| Text/14px/Bold / Lato Bold | Lato | 14px | 21px | Bold (700) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
 | Text / 14px / Regular / Lato Regular | Lato | 14px | 21px | Regular (400) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
 | Text / 12px / Regular / Lato Regular | Lato | 12px | 18px | Regular (400) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
 | Text / 12px / Bold / Lato Bold | Lato | 12px | 18px | Bold (700) | TBD | Left, Center, Right | Center instance confirmed from Copy-as-CSS |
