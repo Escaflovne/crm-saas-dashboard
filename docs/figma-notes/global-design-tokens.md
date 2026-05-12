@@ -5,6 +5,13 @@ global design tokens in `src/styles/tokens.css`. Figma is the visual source of
 truth. Do not invent token values during implementation. Any value that is not
 yet confirmed in Figma must remain marked as `TBD` until extracted.
 
+## Implementation Status
+
+Confirmed base color and typography tokens have an initial CSS implementation
+in `src/styles/tokens.css`. Semantic mappings, unresolved letter-spacing
+tokens, alignment tokens, spacing, radius, shadow, layout, and component tokens
+remain out of scope.
+
 ## Source Frame
 
 - Figma file: TBD
