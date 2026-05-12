@@ -18,8 +18,31 @@ yet confirmed in Figma must remain marked as `TBD` until extracted.
 Document each token with its Figma style name and the exact value found in
 Figma. Do not invent values.
 
-- Brand / primary colors: TBD
-- Neutral / surface colors: TBD
+Confirmed values below were extracted from the provided Fills / Color Palette
+screenshot only. Semantic token mapping is still TBD until later Figma
+inspection confirms usage.
+
+| Figma label | Confirmed value |
+| --- | --- |
+| Primary | `#5E81F4` |
+| Primary dark | `#1C1D21` |
+| Primary grey | `#8181A5` |
+| Outline | `#F0F0F3` |
+| Background light | `#F5F5FA` |
+| Primary outline | `#5E81F4` |
+| Button hover | `#1C1D21` at 10% |
+| Background | `#F6F6F6` |
+| Background white | `#FFFFFF` |
+| Outline white | `#FFFFFF` |
+| Secondary yellow | `#F4BE5E` |
+| Secondary green | `#7CE7AC` |
+| Secondary red | `#FF808B` |
+| Secondary purple | `#9698D6` |
+| Secondary cyan | `#40E1FA` |
+| Resting outline | `#ECECF2` |
+
+- Brand / primary semantic mapping: TBD
+- Neutral / surface semantic mapping: TBD
 - Text colors (default, muted, inverse, link): TBD
 - Border colors: TBD
 - Status colors (success, warning, danger, info): TBD
