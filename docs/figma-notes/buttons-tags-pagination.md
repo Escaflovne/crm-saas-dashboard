@@ -296,8 +296,141 @@ samples except for background color and parent position.
 
 ## Color Outline Extraction Notes
 
-Color outline is not implementation-ready. No confirmed Color outline values
-are documented yet.
+Color outline is not implementation-ready. The samples below are visually part
+of the Color outline group/row. Their Copy-as-CSS comment says
+`Buttons / Plain / Outline / ActiveButton`; this naming is preserved here and
+must not be used to reopen Plain Outline notes. The four samples are
+structurally equivalent based on the provided CSS values, except for border
+color, label color, and parent position. Exact Color outline variant/state
+names remain TBD.
+
+### Green outline color sample
+
+| Property | Confirmed value |
+| --- | --- |
+| Exact Color outline variant/state name | TBD |
+| Copy-as-CSS comment | `Buttons / Plain / Outline / ActiveButton` |
+| Parent position | `absolute` |
+| Parent left | `0.18%` |
+| Parent right | `82.03%` |
+| Parent top | `65.3%` |
+| Parent bottom | `0.37%` |
+| Background box sizing | `border-box` |
+| Background position | `absolute` |
+| Background left | `0%` |
+| Background right | `0%` |
+| Background top | `0%` |
+| Background bottom | `0%` |
+| Background | `#FFFFFF` |
+| Border | `1px solid #7CE7AC` |
+| Border radius | `8px` |
+| Label height | `17px` |
+| Label left | `33.16%` |
+| Label right | `32.14%` |
+| Label top | `calc(50% - 17px/2 - 0.5px)` |
+| Label font family | Lato |
+| Label font style | normal |
+| Label font weight | `700` |
+| Label font size | `14px` |
+| Label line height | `17px` |
+| Label text alignment | Center |
+| Label color | `#7CE7AC` |
+
+### Red outline color sample
+
+| Property | Confirmed value |
+| --- | --- |
+| Exact Color outline variant/state name | TBD |
+| Copy-as-CSS comment | `Buttons / Plain / Outline / ActiveButton` |
+| Parent position | `absolute` |
+| Parent left | `23.05%` |
+| Parent right | `59.17%` |
+| Parent top | `65.3%` |
+| Parent bottom | `0.37%` |
+| Background box sizing | `border-box` |
+| Background position | `absolute` |
+| Background left | `0%` |
+| Background right | `0%` |
+| Background top | `0%` |
+| Background bottom | `0%` |
+| Background | `#FFFFFF` |
+| Border | `1px solid #FF808B` |
+| Border radius | `8px` |
+| Label height | `17px` |
+| Label left | `33.16%` |
+| Label right | `32.14%` |
+| Label top | `calc(50% - 17px/2 - 0.5px)` |
+| Label font family | Lato |
+| Label font style | normal |
+| Label font weight | `700` |
+| Label font size | `14px` |
+| Label line height | `17px` |
+| Label text alignment | Center |
+| Label color | `#FF808B` |
+
+### Yellow outline color sample
+
+| Property | Confirmed value |
+| --- | --- |
+| Exact Color outline variant/state name | TBD |
+| Copy-as-CSS comment | `Buttons / Plain / Outline / ActiveButton` |
+| Parent position | `absolute` |
+| Parent left | `45.92%` |
+| Parent right | `36.3%` |
+| Parent top | `65.3%` |
+| Parent bottom | `0.37%` |
+| Background box sizing | `border-box` |
+| Background position | `absolute` |
+| Background left | `0%` |
+| Background right | `0%` |
+| Background top | `0%` |
+| Background bottom | `0%` |
+| Background | `#FFFFFF` |
+| Border | `1px solid #F4BE5E` |
+| Border radius | `8px` |
+| Label height | `17px` |
+| Label left | `33.16%` |
+| Label right | `32.14%` |
+| Label top | `calc(50% - 17px/2 - 0.5px)` |
+| Label font family | Lato |
+| Label font style | normal |
+| Label font weight | `700` |
+| Label font size | `14px` |
+| Label line height | `17px` |
+| Label text alignment | Center |
+| Label color | `#F4BE5E` |
+
+### Gray purple outline color sample
+
+| Property | Confirmed value |
+| --- | --- |
+| Exact Color outline variant/state name | TBD |
+| Copy-as-CSS comment | `Buttons / Plain / Outline / ActiveButton` |
+| Parent position | `absolute` |
+| Parent left | `68.78%` |
+| Parent right | `13.43%` |
+| Parent top | `65.3%` |
+| Parent bottom | `0.37%` |
+| Background box sizing | `border-box` |
+| Background position | `absolute` |
+| Background left | `0%` |
+| Background right | `0%` |
+| Background top | `0%` |
+| Background bottom | `0%` |
+| Background | `#FFFFFF` |
+| Border | `1px solid #8181A5` |
+| Border radius | `8px` |
+| Label height | `17px` |
+| Label left | `33.16%` |
+| Label right | `32.14%` |
+| Label top | `calc(50% - 17px/2 - 0.5px)` |
+| Label font family | Lato |
+| Label font style | normal |
+| Label font weight | `700` |
+| Label font size | `14px` |
+| Label line height | `17px` |
+| Label text alignment | Center |
+| Label color | `#8181A5` |
 
 | Extraction item | Status |
 | --- | --- |
