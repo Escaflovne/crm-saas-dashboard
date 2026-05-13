@@ -32,7 +32,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Date picker | Partially documented / closed for now | Date picker overview documented; day-cell grid, date-picker/range/selected-date/navigation/slider behavior, responsive behavior, source metadata, and component API remain TBD | No |
 | Search fields, if present | Not ready | TBD | No |
 | Textarea, if present | Not ready | TBD | No |
-| Checkbox/radio/switch, if present | Partially documented | Checkbox, Radio, and Switch/Toggles copied samples documented; behavior, validation, accessibility, source metadata, and component API remain TBD | No |
+| Checkbox/radio/switch, if present | Partially documented / closed for now | Checkbox, Radio, and Switch/Toggles copied samples documented; behavior, validation, accessibility, source metadata, and component API remain TBD | No |
 | Source metadata | Not ready | TBD | No |
 | Component scope/API decision | Not ready | TBD | No |
 
@@ -1325,7 +1325,7 @@ evidence and must not be normalized into behavior assumptions.
 - Checkbox and Radio samples are partially documented and closed for preparation
   boundary purposes, but Forms remain not implementation-ready.
 - This closure note covers Checkbox and Radio only; Switch/Toggles are
-  documented separately and are not closure-audited yet.
+  documented and closure-audited separately.
 - Confirmed sample coverage includes copied Checkbox and Radio groups, section
   titles, section lines, visible variants, copied dimensions, typography,
   colors, backgrounds, radii, opacity/mix values, and visible mark layers where
@@ -1459,6 +1459,25 @@ out of scope for this section.
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
+
+## Toggles Closure Notes
+
+- Toggles/Switches samples are partially documented and closed for preparation
+  boundary purposes, but Forms remain not implementation-ready.
+- Slider remains out of scope and is not extracted.
+- Confirmed sample coverage includes copied Toggles group metadata, section
+  title, section line, `Disabled`, `Primary`, and `States` groups, visible
+  labels, copied dimensions, typography, colors, backgrounds, radii,
+  opacity/mix values, and switch thumb positions where provided.
+- Copied absolute positions and percentage offsets are documentation evidence
+  only, not normalized implementation values.
+- Copied layer names such as `Off`, `On`, `Disabled`, `Error`, `Success`,
+  `Primary`, and `States` are preserved as Figma evidence and must not be
+  normalized into behavior assumptions.
+- Behavior semantics, validation semantics, accessibility behavior, responsive
+  behavior, source metadata, Auto Layout spacing/gap/padding, and component
+  API/scope decisions remain TBD.
+- Additional element states remain TBD.
 
 ## Date Picker Overview Closure Notes
 
