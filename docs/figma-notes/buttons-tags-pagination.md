@@ -110,7 +110,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
 | Pagination | Partially documented / closed for now | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
 | Progress bars | Partially documented / closed for now | Visible Progress bar variants documented; exact state/value semantics, pixel dimensions, labels, responsive behavior, source metadata, and component scope remain TBD | No |
-| Tabs primary | Partially documented | Visible Tabs primary sample documented; disabled/focus/hover behavior, responsive behavior, icon source mapping, source metadata, and component API remain TBD | No |
+| Tabs primary | Partially documented / closed for now | Visible Tabs primary sample documented; disabled/focus/hover behavior, responsive behavior, icon source mapping, source metadata, and component API remain TBD | No |
 | Badge & status tag | Not ready | Extract status variants, colors, dimensions, typography, radius, and icon behavior if present | No |
 | Token mapping review | Deferred | Map confirmed extracted values to implementation token names after extraction is complete | No |
 | Final readiness check | Deferred | Verify all required values are extracted and no implementation blockers remain | No |
@@ -955,6 +955,24 @@ Shared icon values:
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
+
+## Tabs Primary Closure Notes
+
+- Tabs primary is partially documented and closed for preparation boundary
+  purposes, but not implementation-ready.
+- Confirmed sample coverage includes text active, icon active, text resting,
+  and icon resting copied Figma values.
+- Copied absolute positions and percentage offsets are documentation evidence
+  only, not normalized implementation values.
+- Duplicated copied names such as `Tabs/Text/Resting`, `Tabs / Icon /
+  RestingTab`, and `Tab 2` are preserved as Figma evidence and must not be
+  normalized.
+- Icon font-family `la-solid-900` is documented as copied CSS evidence only;
+  icon source/library mapping remains TBD.
+- Disabled, focus, hover, responsive, and interaction behavior remain TBD.
+- Auto Layout spacing/gap/padding remains TBD.
+- Source metadata remains TBD.
+- Component API and component-scope decisions remain TBD.
 
 ## Implementation Readiness
 
