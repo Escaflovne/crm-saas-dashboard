@@ -29,6 +29,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Helper text | Not ready | TBD | No |
 | Validation messages | Not ready | TBD | No |
 | Select/dropdown fields, if present | Partially documented / closed for now | Copied Select fields active samples documented; select/open/closed/hover/focus/active/selected behavior, source metadata, and component API remain TBD | No |
+| Date picker | Partially documented | Copied Date picker overview samples documented; date behavior, range behavior, navigation behavior, source metadata, and component API remain TBD | No |
 | Search fields, if present | Not ready | TBD | No |
 | Textarea, if present | Not ready | TBD | No |
 | Checkbox/radio/switch, if present | Not ready | TBD | No |
@@ -914,6 +915,291 @@ Shared copied trigger child values:
   responsive behavior, source metadata, Auto Layout spacing/gap/padding, and
   component API/scope decisions remain TBD.
 - Additional select/dropdown states remain TBD.
+
+## Date Picker Overview Extraction Notes
+
+Date picker overview samples are not implementation-ready. The extracted
+sample below documents copied Figma values only. Copied names such as
+`Calendar`, `Month`, `bg`, `Bg`, `Forms / Input / Active Icon on Right`,
+`Left`, `Right`, `Title`, `SetDate`, `Year`, `Date`, `Rectangle`,
+`Rectangle Copy`, `Rectangle5`, `Line4`, `Line4Copy`, `SlideToSetRequire`,
+and `Set date` are preserved as Figma evidence and must not be normalized into
+date-picker behavior assumptions.
+
+This ticket intentionally does not document every individual calendar day
+cell.
+
+### Date picker visual context
+
+| Property | Confirmed value |
+| --- | --- |
+| Visible section label | Date picker |
+| Section label source | Visual context only; no reliable Copy-as-CSS provided |
+
+### Date picker trigger inputs
+
+All three trigger inputs use the copied layer/name `Forms / Input / Active Icon
+on Right`. Repeated copied names are preserved exactly.
+
+| Trigger | Layer/name | Position | Width | Height | Left | Top | Background color |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Trigger input 1 | `Forms / Input / Active Icon on Right` | `absolute` | `360px` | `72px` | `150px` | `1575px` | `#ECECF2` |
+| Trigger input 2 | `Forms / Input / Active Icon on Right` | `absolute` | `360px` | `72px` | `541px` | `1575px` | `#ECECF2` |
+| Trigger input 3 | `Forms / Input / Active Icon on Right` | `absolute` | `360px` | `72px` | `934px` | `1575px` | `#5E81F4` |
+
+Shared copied trigger child values:
+
+| Property | Confirmed value |
+| --- | --- |
+| Background position | `absolute` |
+| Background height | `1px` |
+| Background left | `0%` |
+| Background right | `0%` |
+| Background bottom | `0px` |
+| Icon position | `absolute` |
+| Icon width | `18px` |
+| Icon height | `18px` |
+| Icon right | `0px` |
+| Icon top | `calc(50% - 18px/2 + 9px)` |
+| Icon font family | `la-solid-900` |
+| Icon font style | normal |
+| Icon font weight | `400` |
+| Icon font size | `18px` |
+| Icon line height | `18px` |
+| Icon text alignment | Center |
+| Icon color | `#1C1D21` |
+| Placeholder position | `absolute` |
+| Placeholder width | `29px` |
+| Placeholder height | `21px` |
+| Placeholder left | `0px` |
+| Placeholder top | `calc(50% - 21px/2 + 10.5px)` |
+| Placeholder font family | Lato |
+| Placeholder font style | normal |
+| Placeholder font weight | `700` |
+| Placeholder font size | `14px` |
+| Placeholder line height | `21px` |
+| Placeholder color | `#1C1D21` |
+| Field title position | `absolute` |
+| Field title width | `58px` |
+| Field title height | `21px` |
+| Field title left | `0px` |
+| Field title top | `calc(50% - 21px/2 - 15.5px)` |
+| Field title font family | Lato |
+| Field title font style | normal |
+| Field title font weight | `400` |
+| Field title font size | `14px` |
+| Field title line height | `21px` |
+| Field title color | `#8181A5` |
+
+### Calendar panel 1
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Calendar` |
+| Position | `absolute` |
+| Width | `362px` |
+| Height | `332px` |
+| Left | `149px` |
+| Top | `1664px` |
+| Background layer name | `bg` |
+| Background position | `absolute` |
+| Background width | `361px` |
+| Background height | `332px` |
+| Background left | `149px` |
+| Background top | `1664px` |
+| Background | `#FFFFFF` |
+| Box shadow | `0px 6px 20px rgba(153, 155, 168, 0.1)` |
+| Border radius | `8px` |
+
+#### Calendar panel 1 month header
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Month` |
+| Position | `absolute` |
+| Width | `362px` |
+| Height | `60px` |
+| Left | `149px` |
+| Top | `1664px` |
+| Header background layer name | `Bg` |
+| Header background left | `0%` |
+| Header background right | `0.2%` |
+| Header background top | `0%` |
+| Header background bottom | `0%` |
+| Header background | `#F5F5FA` |
+| Header background radius | `8px 8px 0px 0px` |
+| Month label layer/name | `June2018` |
+| Month label height | `24px` |
+| Month label left | `39.64%` |
+| Month label right | `39.92%` |
+| Month label top | `calc(50% - 24px/2 + 2px)` |
+| Month label font | Lato normal `700`, `16px`, line-height `24px`, Center |
+| Month label color | `#1C1D21` |
+| Left layer/name | `Left` |
+| Left height | `18px` |
+| Left left | `6.38%` |
+| Left right | `88.63%` |
+| Left top | `calc(50% - 18px/2 + 1px)` |
+| Left font | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center |
+| Left color | `#8181A5` |
+| Right layer/name | `Right` |
+| Right height | `18px` |
+| Right left | `90.09%` |
+| Right right | `4.92%` |
+| Right top | `calc(50% - 18px/2)` |
+| Right font | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center |
+| Right color | `#8181A5` |
+
+### Calendar panel 2
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Calendar` |
+| Position | `absolute` |
+| Width | `362px` |
+| Height | `332px` |
+| Left | `541px` |
+| Top | `1664px` |
+| Background layer name | `bg` |
+| Background position | `absolute` |
+| Background width | `361px` |
+| Background height | `332px` |
+| Background left | `541px` |
+| Background top | `1664px` |
+| Background | `#FFFFFF` |
+| Box shadow | `0px 6px 20px rgba(153, 155, 168, 0.1)` |
+| Border radius | `8px` |
+
+Visible selection/range background layers:
+
+| Layer/name | Position | Width | Height | Left | Top | Background | Border radius |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `bg` | `absolute` | `33px` | `33px` | `855.63px` | `1845.5px` | `#1B51E5` | `16.5px` |
+| `Rectangle` | `absolute` | `160px` | `33px` | `733px` | `1845.5px` | `linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF` | `0px 6px 6px 0px` |
+| `Rectangle Copy` | `absolute` | `126px` | `33px` | `554.63px` | `1878px` | `linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF` | `6px 0px 0px 6px` |
+
+#### Calendar panel 2 month header
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Month` |
+| Position | `absolute` |
+| Width | `362px` |
+| Height | `60px` |
+| Left | `541px` |
+| Top | `1664px` |
+| Header background layer name | `Bg` |
+| Header background left | `0%` |
+| Header background right | `0.2%` |
+| Header background top | `0%` |
+| Header background bottom | `0%` |
+| Header background | `#F5F5FA` |
+| Header background radius | `8px 8px 0px 0px` |
+| Month label layer/name | `June2018` |
+| Month label height | `24px` |
+| Month label left | `39.64%` |
+| Month label right | `39.92%` |
+| Month label top | `calc(50% - 24px/2 + 2px)` |
+| Month label font | Lato normal `700`, `16px`, line-height `24px`, Center |
+| Month label color | `#1C1D21` |
+| Left layer/name | `Left` |
+| Left height | `18px` |
+| Left left | `6.38%` |
+| Left right | `88.64%` |
+| Left top | `calc(50% - 18px/2 + 1px)` |
+| Left font | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center |
+| Left color | `#8181A5` |
+| Right layer/name | `Right` |
+| Right height | `18px` |
+| Right left | `90.1%` |
+| Right right | `4.93%` |
+| Right top | `calc(50% - 18px/2)` |
+| Right font | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center |
+| Right color | `#8181A5` |
+
+### SetDate panel
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `SetDate` |
+| Position | `absolute` |
+| Width | `361px` |
+| Height | `332px` |
+| Left | `933px` |
+| Top | `1664px` |
+| Background box sizing | `border-box` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `#FFFFFF` |
+| Border | `1px solid #ECECF2` |
+| Border radius | `8px` |
+| Bottom bg left | `0.28%` |
+| Bottom bg right | `0.28%` |
+| Bottom bg top | `84.34%` |
+| Bottom bg bottom | `0.3%` |
+| Bottom bg background | `linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF` |
+| Bottom bg radius | `0px 0px 8px 8px` |
+| Set date layer/name | `Set date` |
+| Set date height | `17px` |
+| Set date left | `42.8%` |
+| Set date right | `42.8%` |
+| Set date top | `calc(50% - 17px/2 + 139.5px)` |
+| Set date font | Lato normal `700`, `14px`, line-height `17px` |
+| Set date color | `#5E81F4` |
+| Slide layer/name | `SlideToSetRequire` |
+| Slide height | `21px` |
+| Slide left | `4.59%` |
+| Slide right | `53.03%` |
+| Slide top | `calc(50% - 21px/2 - 125.5px)` |
+| Slide font | Lato normal `400`, `14px`, line-height `21px` |
+| Slide color | `#8181A5` |
+
+#### SetDate controls
+
+Shared copied control structure for `Year`, `Month`, and `Date`:
+
+| Shared item | Confirmed value |
+| --- | --- |
+| Child layer names | `Bg`, `Rectangle5`, `Line4`, `Line4Copy`, `Title`, `Left`, `Right` |
+| Left/Right font | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center; color `#8181A5` |
+| Rectangle5 | Box sizing `border-box`; height `52px`; background `#FFFFFF`; border `1px solid #EEEEEE`; radius `4px` |
+| Line4 | Left `15.45%`; right `83.64%`; top `1.92%`; bottom `0%`; border `1px solid #EEEEEE` |
+| Line4Copy | Left `83.94%`; right `16.03%`; top `1.92%`; bottom `0%`; border `1px solid #EEEEEE` |
+| Title font | Lato normal `700`, `14px`, line-height `17px`, Center; color `#1C1D21` |
+
+| Control | Layer/name | Position | Left | Right | Top | Bottom | Title left | Title right | Left left | Left right | Right left | Right right |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Year | `Year` | `absolute` | `4.17%` | `3.86%` | `20.78%` | `63.55%` | `44.58%` | `45.48%` | `5.45%` | `89.13%` | `88.87%` | `5.7%` |
+| Month | `Month` | `absolute` | `4.17%` | `3.86%` | `39.46%` | `44.88%` | `42.02%` | `44.43%` | `5.45%` | `89.13%` | `88.87%` | `5.7%` |
+| Date | `Date` | `absolute` | `4.16%` | `3.88%` | `58.13%` | `26.2%` | `46.99%` | `47.89%` | `5.45%` | `89.13%` | `88.87%` | `5.7%` |
+
+Shared control detail:
+
+| Property | Confirmed value |
+| --- | --- |
+| Title height | `17px` |
+| Title top | `calc(50% - 17px/2 + 0.5px)` |
+| Left height | `18px` |
+| Left top | `calc(50% - 18px/2)` |
+| Right height | `18px` |
+| Right top | `calc(50% - 18px/2 - 1px)` |
+
+### Date picker overview extraction status
+
+| Extraction item | Status |
+| --- | --- |
+| Visible variants/items | Trigger inputs, Calendar panels, Calendar month headers, visible range/selection backgrounds, and SetDate panel/controls documented; day-cell grid TBD |
+| Dimensions | Copied dimensions documented where provided; percentage offsets not converted to pixel dimensions |
+| Typography | Visible trigger, month header, control, and SetDate typography documented |
+| Colors | Visible trigger, panel, header, range/selection, border, shadow, and control colors documented |
+| Background/border/radius | Visible copied background, border, shadow, and radius values documented |
+| Icon presence and icon source mapping, if applicable | `la-solid-900` documented as copied font-family evidence only; icon source/library mapping TBD |
+| Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
+| Date-picker/range/navigation/slider behavior | Copied layer names documented; behavior semantics TBD |
+| Validation semantics | TBD |
+| Responsive behavior | TBD |
+| Source metadata | TBD |
+| Component scope/API decision | TBD |
 
 ## Text Fields Closure Notes
 
