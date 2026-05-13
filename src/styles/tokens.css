@@ -15,6 +15,21 @@
   --color-secondary-cyan: #40E1FA;
   --color-resting-outline: #ECECF2;
 
+  /* Semantic color aliases */
+  --color-text-primary: var(--color-primary-dark);
+  --color-text-muted: var(--color-primary-grey);
+  --color-text-inverse: var(--color-background-white);
+  --color-text-brand: var(--color-primary);
+  --color-bg-app: var(--color-background-light);
+  --color-bg-surface: var(--color-background-white);
+  --color-bg-subtle: var(--color-background);
+  --color-bg-brand: var(--color-primary);
+  --color-border-subtle: var(--color-outline);
+  --color-border-default: var(--color-resting-outline);
+  --color-border-brand: var(--color-primary-outline);
+  --color-border-inverse: var(--color-outline-white);
+  --color-brand-primary: var(--color-primary);
+
   --font-family-primary: "Lato", sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
