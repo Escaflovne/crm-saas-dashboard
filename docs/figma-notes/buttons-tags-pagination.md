@@ -111,7 +111,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Pagination | Partially documented / closed for now | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
 | Progress bars | Partially documented / closed for now | Visible Progress bar variants documented; exact state/value semantics, pixel dimensions, labels, responsive behavior, source metadata, and component scope remain TBD | No |
 | Tabs primary | Partially documented / closed for now | Visible Tabs primary sample documented; disabled/focus/hover behavior, responsive behavior, icon source mapping, source metadata, and component API remain TBD | No |
-| Badge & status tag | Not ready | Extract status variants, colors, dimensions, typography, radius, and icon behavior if present | No |
+| Badge & status tag | Partially documented | Visible Badge & status tag sample documented; state semantics, behavior, responsiveness, source metadata, Tags relationship, and component API remain TBD | No |
 | Token mapping review | Deferred | Map confirmed extracted values to implementation token names after extraction is complete | No |
 | Final readiness check | Deferred | Verify all required values are extracted and no implementation blockers remain | No |
 
@@ -976,27 +976,136 @@ Shared icon values:
 
 ## Badge & Status Tag Extraction Notes
 
-Badge & status tag is not implementation-ready. Extraction is pending, and no
-confirmed Badge & status tag-specific Figma values are documented yet. This
-scope remains separate from the existing Tags extraction notes.
+Badge & status tag is not implementation-ready. The extracted sample below
+documents copied Figma values only. This scope remains separate from the
+existing Tags extraction notes.
+
+### Badge & status tag group extraction sample
+
+Group container metadata:
+
+| Property | Confirmed value |
+| --- | --- |
+| Group/layer | `Badge` |
+| Position | `absolute` |
+| Width | `551px` |
+| Height | `120px` |
+| Left | `741px` |
+| Top | `1639px` |
+
+Group context metadata, not badge or status tag variants:
+
+| Context item | Confirmed values |
+| --- | --- |
+| Section title `Badge & status tag` | Position `absolute`; height `24px`; left `0%`; right `75.86%`; top `calc(50% - 24px/2 - 16.5px)`; Lato normal `700`; `16px`; line-height `24px`; color `#1C1D21` |
+| Line | Position `absolute`; left `0.18%`; right `0%`; top `0%`; bottom `99.17%`; border `1px solid #EEEEEE` |
+
+#### Badge oval
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer | `Badge / Oval` |
+| Position | `absolute` |
+| Parent left | `18.51%` |
+| Parent right | `76.04%` |
+| Parent top | `78.33%` |
+| Parent bottom | `1.67%` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `linear-gradient(0deg, rgba(124, 231, 172, 0.1), rgba(124, 231, 172, 0.1)), #FFFFFF` |
+| Border radius | `12px` |
+| Number position | `absolute` |
+| Number height | `21px` |
+| Number left | `11px` |
+| Number right | `10px` |
+| Number top | `calc(50% - 21px/2 - 0.5px)` |
+| Number font family | Lato |
+| Number font style | normal |
+| Number font weight | `700` |
+| Number font size | `14px` |
+| Number line height | `21px` |
+| Number text alignment | Center |
+| Number color | `#7CE7AC` |
+
+#### Badge round
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer | `Badge / Round` |
+| Position | `absolute` |
+| Parent left | `28.68%` |
+| Parent right | `65.88%` |
+| Parent top | `78.33%` |
+| Parent bottom | `1.67%` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `linear-gradient(0deg, rgba(124, 231, 172, 0.1), rgba(124, 231, 172, 0.1)), #FFFFFF` |
+| Border radius | `3px` |
+| Number position | `absolute` |
+| Number height | `21px` |
+| Number left | `11px` |
+| Number right | `10px` |
+| Number top | `calc(50% - 21px/2 - 0.5px)` |
+| Number font family | Lato |
+| Number font style | normal |
+| Number font weight | `700` |
+| Number font size | `14px` |
+| Number line height | `21px` |
+| Number text alignment | Center |
+| Number color | `#7CE7AC` |
+
+#### Status tag
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer | `Tags / Status tag` |
+| Position | `absolute` |
+| Parent left | `0.18%` |
+| Parent right | `86.21%` |
+| Parent top | `76.67%` |
+| Parent bottom | `0%` |
+| Background layer name | `bg hover` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `#F5F5FA` |
+| Border radius | `6px` |
+| Text layer name | `Online` |
+| Text position | `absolute` |
+| Text height | `21px` |
+| Text left | `23px` |
+| Text right | `11px` |
+| Text top | `calc(50% - 21px/2 - 0.5px)` |
+| Text font family | Lato |
+| Text font style | normal |
+| Text font weight | `400` |
+| Text font size | `14px` |
+| Text line height | `21px` |
+| Text color | `#8181A5` |
+| Indicator layer name | `Circle` |
+| Indicator position | `absolute` |
+| Indicator width | `8px` |
+| Indicator height | `8px` |
+| Indicator left | `9px` |
+| Indicator top | `calc(50% - 8px/2)` |
+| Indicator background | `#7CE7AC` |
 
 | Extraction item | Status |
 | --- | --- |
-| Visible variants/items | TBD |
-| Badge shape variants, if present | TBD |
-| Status tag variants, if present | TBD |
-| State semantics | TBD |
-| Dimensions | TBD |
-| Typography | TBD |
-| Colors | TBD |
-| Background/radius/border | TBD |
-| Status indicator/dot behavior, if present | TBD |
-| Icon presence, if present | TBD |
-| Spacing/gap/padding | TBD |
-| Hover/focus/active/disabled behavior | TBD |
+| Visible variants/items | Visible `Badge / Oval`, `Badge / Round`, and `Tags / Status tag` samples documented |
+| Badge shape variants, if present | Oval and Round samples documented |
+| Status tag variants, if present | Visible `Online` status tag sample documented; broader status variants TBD |
+| State semantics | Copied names documented; status semantics beyond visible `Online` label TBD |
+| Dimensions | Group dimensions and copied item dimensions documented where provided; percentage offsets not converted to pixel dimensions |
+| Typography | Visible typography documented |
+| Colors | Visible colors documented |
+| Background/radius/border | Visible background/radius values documented; border values not confirmed beyond copied values |
+| Status indicator/dot behavior, if present | Visible `Circle` indicator documented; behavior TBD |
+| Icon presence, if present | None confirmed beyond visible status indicator |
+| Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
+| Hover/focus/active/disabled behavior | `bg hover` is preserved as copied layer name only; behavior TBD |
 | Responsive behavior | TBD |
 | Source metadata | TBD |
-| Relationship to existing Tags scope | TBD |
+| Relationship to existing Tags scope | Kept separate from existing Tags extraction notes; final relationship TBD |
 | Component scope/API decision | TBD |
 
 ## Implementation Readiness
