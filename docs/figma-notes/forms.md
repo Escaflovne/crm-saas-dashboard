@@ -29,7 +29,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Helper text | Not ready | TBD | No |
 | Validation messages | Not ready | TBD | No |
 | Select/dropdown fields, if present | Partially documented / closed for now | Copied Select fields active samples documented; select/open/closed/hover/focus/active/selected behavior, source metadata, and component API remain TBD | No |
-| Date picker | Partially documented | Copied Date picker overview samples documented; date behavior, range behavior, navigation behavior, source metadata, and component API remain TBD | No |
+| Date picker | Partially documented / closed for now | Date picker overview documented; day-cell grid, date-picker/range/selected-date/navigation/slider behavior, responsive behavior, source metadata, and component API remain TBD | No |
 | Search fields, if present | Not ready | TBD | No |
 | Textarea, if present | Not ready | TBD | No |
 | Checkbox/radio/switch, if present | Not ready | TBD | No |
@@ -1200,6 +1200,31 @@ Shared control detail:
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
+
+## Date Picker Overview Closure Notes
+
+- Date picker overview is partially documented and closed for preparation boundary
+  purposes, but Forms remain not implementation-ready.
+- Confirmed overview coverage includes visible Date picker context, three
+  repeated `Forms / Input / Active Icon on Right` trigger inputs, two
+  `Calendar` panels, Calendar month headers, visible range/selection background
+  layers, and the `SetDate` panel and controls.
+- Individual calendar day-cell grid extraction remains TBD.
+- Copied absolute positions and percentage offsets are documentation evidence
+  only, not normalized implementation values.
+- Visible range/selection background layers are copied Figma evidence only and
+  must not be normalized into range-selection or selected-date behavior
+  assumptions.
+- Repeated copied names such as `Calendar`, `Month`, `Left`, `Right`, `Title`,
+  and `Forms / Input / Active Icon on Right` are preserved as Figma evidence and
+  must not be normalized.
+- Icon font-family `la-solid-900` is documented as copied font-family evidence
+  only; icon source/library mapping remains TBD.
+- Date-picker behavior semantics, range-selection behavior, selected-date
+  behavior, calendar navigation behavior, slider behavior, responsive behavior,
+  source metadata, Auto Layout spacing/gap/padding, and component API/scope
+  decisions remain TBD.
+- Additional date-picker states remain TBD.
 
 ## Text Fields Closure Notes
 
