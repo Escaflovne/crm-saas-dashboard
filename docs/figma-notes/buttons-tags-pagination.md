@@ -461,6 +461,23 @@ names remain TBD.
 - Figma source metadata remains TBD.
 - Icon/source details remain TBD if present.
 
+## Tags Extraction Notes
+
+Tags are not implementation-ready. No confirmed Tags-specific Figma values are
+available yet.
+
+| Extraction item | Status |
+| --- | --- |
+| Variant/state names | TBD |
+| Colors per state | TBD |
+| Dimensions | TBD |
+| Typography | TBD |
+| Radius | TBD |
+| Close/icon behavior, if present | TBD |
+| Selection/interaction behavior, if present | TBD |
+| Figma source metadata | TBD |
+| Whether Tags and Badge/status tag variants should be separate scopes | TBD |
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
