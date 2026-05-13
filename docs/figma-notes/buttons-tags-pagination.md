@@ -767,6 +767,26 @@ Shared confirmed facts:
 - Responsive behavior remains TBD.
 - Component API and component-scope decisions remain TBD.
 
+## Tabs Primary Extraction Notes
+
+Tabs primary is not implementation-ready. Extraction is pending, and no
+confirmed Tabs primary-specific Figma values are documented yet.
+
+| Extraction item | Status |
+| --- | --- |
+| Visible variants/states | TBD |
+| Active/resting/disabled semantics | TBD |
+| Dimensions | TBD |
+| Typography | TBD |
+| Colors | TBD |
+| Border/radius | TBD |
+| Icon presence and icon source mapping, if applicable | TBD |
+| Spacing/gap/padding | TBD |
+| Focus/hover/active behavior | TBD |
+| Responsive behavior | TBD |
+| Source metadata | TBD |
+| Component scope/API decision | TBD |
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
