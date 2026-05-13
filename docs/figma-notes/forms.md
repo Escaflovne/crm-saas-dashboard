@@ -32,7 +32,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Date picker | Partially documented / closed for now | Date picker overview documented; day-cell grid, date-picker/range/selected-date/navigation/slider behavior, responsive behavior, source metadata, and component API remain TBD | No |
 | Search fields, if present | Not ready | TBD | No |
 | Textarea, if present | Not ready | TBD | No |
-| Checkbox/radio/switch, if present | Not ready | TBD | No |
+| Checkbox/radio/switch, if present | Partially documented | Checkbox and Radio copied samples documented; Switch remains TBD; behavior, accessibility, source metadata, and component API remain TBD | No |
 | Source metadata | Not ready | TBD | No |
 | Component scope/API decision | Not ready | TBD | No |
 
@@ -1196,6 +1196,125 @@ Shared control detail:
 | Icon presence and icon source mapping, if applicable | `la-solid-900` documented as copied font-family evidence only; icon source/library mapping TBD |
 | Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
 | Date-picker/range/navigation/slider behavior | Copied layer names documented; behavior semantics TBD |
+| Validation semantics | TBD |
+| Responsive behavior | TBD |
+| Source metadata | TBD |
+| Component scope/API decision | TBD |
+
+## Forms Elements Checkbox and Radio Extraction Notes
+
+Checkbox and Radio samples are not implementation-ready. The extracted sample
+below documents copied Figma values only. Copied names such as `Checkbox`,
+`Radio`, `Forms / Checkbox / Resting`, `Forms / Checkbox / Active`,
+`Forms / Radio / Resting`, `Forms / Radio / Active`, `Rectangle 3`,
+`Rectangle 3 Copy`, `Title`, `Shape`, and `Line` are preserved as Figma
+evidence and must not be normalized into behavior assumptions.
+
+### Forms Elements visual context
+
+| Context item | Confirmed value |
+| --- | --- |
+| Breadcrumb/area visible | `Ui / Forms / Elements` |
+| Main visible title | `Forms / Elements` |
+| Screenshot-selected group dimensions | `1141 × 378` |
+| Context status | Visual context only unless copied CSS values are documented below |
+
+### Checkbox group
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Checkbox` |
+| Position | `absolute` |
+| Width | `1141px` |
+| Height | `144px` |
+| Left | `149px` |
+| Top | `256px` |
+
+### Checkbox section title and line
+
+| Property | Confirmed value |
+| --- | --- |
+| Title layer/name | `Checkbox` |
+| Title position | `absolute` |
+| Title height | `24px` |
+| Title left | `0%` |
+| Title right | `93.69%` |
+| Title top | `calc(50% - 24px/2 - 28px)` |
+| Title font | Lato normal `700`, `16px`, line-height `24px` |
+| Title color | `#1C1D21` |
+| Line layer/name | `Line` |
+| Line position | `absolute` |
+| Line left | `0.09%` |
+| Line right | `0%` |
+| Line top | `0%` |
+| Line bottom | `98.61%` |
+| Line border | `1px solid #EEEEEE` |
+
+### Checkbox variants
+
+| Variant | Position offsets | Opacity/mix | Box values | Title values | Shape values |
+| --- | --- | --- | --- | --- | --- |
+| `Forms / Checkbox / Resting`, disabled-looking copy | Left `34.27%`; right `49.26%`; top `63.89%`; bottom `22.22%` | Mix blend mode `normal`; opacity `0.7` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#F0F0F3`; radius `4px` | Width `125px`; height `21px`; left `32px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#8181A5` | TBD |
+| `Forms / Checkbox / Active`, disabled-looking copy | Left `34.27%`; right `49.26%`; top `86.11%`; bottom `0%` | Mix blend mode `normal`; opacity `0.7` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#5E81F4`; radius `4px` | Width `110px`; height `21px`; left `32px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#1C1D21` | `Shape`: width `10.73px`; height `8px`; left `5px`; top `6px`; background `#FFFFFF` |
+| `Forms / Checkbox / Resting` | Left `0%`; right `90.45%`; top `63.89%`; bottom `22.22%` | TBD | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#F0F0F3`; radius `4px` | Width `70px`; height `21px`; left `32px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#8181A5` | TBD |
+| `Forms / Checkbox / Active` | Left `0%`; right `90.45%`; top `86.11%`; bottom `0%` | TBD | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#5E81F4`; radius `4px` | Width `54px`; height `21px`; left `32px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#1C1D21` | `Shape`: width `10.73px`; height `8px`; left `5px`; top `6px`; background `#FFFFFF` |
+| `Forms / Checkbox / Error` | Left `68.45%`; right `17.88%`; top `63.89%`; bottom `22.22%` | Mix blend mode `normal` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `linear-gradient(0deg, rgba(255, 128, 139, 0.1), rgba(255, 128, 139, 0.1)), #FFFFFF`; radius `4px` | Width `104px`; height `21px`; left `32px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#FF808B` | TBD |
+| `Forms / Checkbox / Success` | Left `68.45%`; right `17.88%`; top `86.11%`; bottom `0%` | Mix blend mode `normal` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `linear-gradient(0deg, rgba(124, 231, 172, 0.1), rgba(124, 231, 172, 0.1)), #FFFFFF`; radius `4px` | Width `105px`; height `21px`; left `32px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#7CE7AC` | `Shape`: width `10.73px`; height `8px`; left `5px`; top `6px`; background `#8AF1B9` |
+
+### Radio group
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Radio` |
+| Position | `absolute` |
+| Width | `1141px` |
+| Height | `144px` |
+| Left | `149px` |
+| Top | `490px` |
+
+### Radio section title and line
+
+| Property | Confirmed value |
+| --- | --- |
+| Title layer/name | `Radio` |
+| Title position | `absolute` |
+| Title height | `24px` |
+| Title left | `0%` |
+| Title right | `96.32%` |
+| Title top | `calc(50% - 24px/2 - 28px)` |
+| Title font | Lato normal `700`, `16px`, line-height `24px` |
+| Title color | `#1C1D21` |
+| Line layer/name | `Line` |
+| Line position | `absolute` |
+| Line left | `0.09%` |
+| Line right | `0%` |
+| Line top | `0%` |
+| Line bottom | `98.61%` |
+| Line border | `1px solid #EEEEEE` |
+
+### Radio variants
+
+| Variant | Position offsets | Opacity/mix | Box values | Title values | Inner mark values |
+| --- | --- | --- | --- | --- | --- |
+| `Forms / Radio / Resting`, disabled-looking copy | Left `34.27%`; right `49.26%`; top `63.89%`; bottom `22.22%` | Mix blend mode `normal`; opacity `0.7` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#F0F0F3`; radius `100px` | Width `125px`; height `21px`; left `30px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#8181A5` | TBD |
+| `Forms / Radio / Active`, disabled-looking copy | Left `34.27%`; right `49.26%`; top `86.11%`; bottom `0%` | Mix blend mode `normal`; opacity `0.7` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#5E81F4`; radius `10px` | Width `110px`; height `21px`; left `30px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#1C1D21` | `Rectangle 3 Copy`: `8px × 8px`; left `6px`; top `6px`; background `#FFFFFF`; radius `10px` |
+| `Forms / Radio / Resting` | Left `0%`; right `90.45%`; top `63.89%`; bottom `22.22%` | TBD | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#F0F0F3`; radius `100px` | Width `70px`; height `21px`; left `30px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#8181A5` | TBD |
+| `Forms / Radio / Active` | Left `0%`; right `90.45%`; top `86.11%`; bottom `0%` | TBD | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `#5E81F4`; radius `10px` | Width `54px`; height `21px`; left `30px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#1C1D21` | `Rectangle 3 Copy`: `8px × 8px`; left `6px`; top `6px`; background `#FFFFFF`; radius `10px` |
+| `Forms / Radio / Error` | Left `68.45%`; right `8.5%`; top `63.89%`; bottom `22.22%` | Mix blend mode `normal` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `linear-gradient(0deg, rgba(255, 128, 139, 0.1), rgba(255, 128, 139, 0.1)), #FFFFFF`; radius `100px` | Width `104px`; height `21px`; left `30px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#FF808B` | TBD |
+| `Forms / Radio / Success` | Left `68.45%`; right `8.5%`; top `86.11%`; bottom `0%` | Mix blend mode `normal` | `Rectangle 3`: `20px × 20px`; left `0px`; top `0px`; background `linear-gradient(0deg, rgba(124, 231, 172, 0.1), rgba(124, 231, 172, 0.1)), #FFFFFF`; radius `100px` | Width `105px`; height `21px`; left `30px`; top `calc(50% - 21px/2 - 0.5px)`; Lato normal `700`, `14px`, line-height `21px`; color `#7CE7AC` | `Rectangle 3 Copy`: `8px × 8px`; left `6px`; top `6px`; background `#7CE7AC`; radius `10px` |
+
+### Checkbox and Radio extraction status
+
+| Extraction item | Status |
+| --- | --- |
+| Visible variants/items | Checkbox and Radio copied samples documented; Switch remains TBD |
+| Dimensions | Copied group and child dimensions documented where provided; percentage offsets not converted to pixel dimensions |
+| Typography | Visible Checkbox and Radio section-title and label typography documented |
+| Colors | Visible box, label, mark, line, error, and success colors documented |
+| Background/border/radius | Visible copied background, border, and radius values documented |
+| Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
+| Checked/unchecked/disabled/error/success behavior | Copied layer names documented; behavior semantics TBD |
+| Accessibility behavior | TBD |
 | Validation semantics | TBD |
 | Responsive behavior | TBD |
 | Source metadata | TBD |
