@@ -103,8 +103,8 @@ padding/gap is a confirmed limitation and must not be invented.
 | --- | --- | --- | --- |
 | Plain Primary buttons | Ready | Preparation values are sufficiently documented; Auto Layout padding/gap is unavailable for inspected frames | No |
 | Plain Outline buttons | Partially ready | Closed for now; Outline buttons / Hover full Copy-as-CSS is unavailable and not reliably selectable at this stage | No |
-| Primary buttons with icon | Partially ready | Icon button Auto Layout spacing; icon source/library mapping; confirm dimensions for any uninspected variants | No |
-| Outline buttons with icon | Partially ready | Icon button Auto Layout spacing; icon source/library mapping; confirm dimensions for any uninspected variants | No |
+| Primary buttons with icon | Partially ready | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; Primary Arrow-only has dimensions but no full visual-value row | No |
+| Outline buttons with icon | Partially ready | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; preserve Outline icon Active label weight `900` | No |
 | Color options | Not ready | Extract states, colors, dimensions, typography, icon/source details, and selection behavior | No |
 | Color outline | Not ready | Extract states, colors, dimensions, border values, typography, and selection behavior | No |
 | Tags | Not ready | Extract tag states, colors, dimensions, typography, radius, and close/icon behavior if present | No |
@@ -132,6 +132,23 @@ padding/gap is a confirmed limitation and must not be invented.
 - Auto Layout padding/gap is unavailable for inspected plain button frames.
   Implementation must not invent padding/gap; if Auto Layout is absent, use
   confirmed frame dimensions and measured child positions.
+
+## Icon Button Closure Notes
+
+- Primary buttons with icon and Outline buttons with icon are partially
+  documented but not implementation-ready.
+- Documented icon/label positions are absolute-position data, not confirmed
+  Auto Layout spacing.
+- Icon button Auto Layout spacing remains unavailable/TBD and must not be
+  invented.
+- If Auto Layout spacing remains unavailable, implementation may later need to
+  rely on confirmed frame dimensions plus measured child positions.
+- Icon source/library mapping remains TBD and blocks implementation.
+- Dimensions for uninspected icon variants remain TBD.
+- Outline icon Active label weight is confirmed as `900` and must not be
+  normalized to `700`.
+- Primary Arrow-only currently has documented dimensions, but no full
+  visual-value row.
 
 ## Implementation Readiness
 
