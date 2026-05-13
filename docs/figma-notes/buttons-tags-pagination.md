@@ -974,6 +974,31 @@ Shared icon values:
 - Source metadata remains TBD.
 - Component API and component-scope decisions remain TBD.
 
+## Badge & Status Tag Extraction Notes
+
+Badge & status tag is not implementation-ready. Extraction is pending, and no
+confirmed Badge & status tag-specific Figma values are documented yet. This
+scope remains separate from the existing Tags extraction notes.
+
+| Extraction item | Status |
+| --- | --- |
+| Visible variants/items | TBD |
+| Badge shape variants, if present | TBD |
+| Status tag variants, if present | TBD |
+| State semantics | TBD |
+| Dimensions | TBD |
+| Typography | TBD |
+| Colors | TBD |
+| Background/radius/border | TBD |
+| Status indicator/dot behavior, if present | TBD |
+| Icon presence, if present | TBD |
+| Spacing/gap/padding | TBD |
+| Hover/focus/active/disabled behavior | TBD |
+| Responsive behavior | TBD |
+| Source metadata | TBD |
+| Relationship to existing Tags scope | TBD |
+| Component scope/API decision | TBD |
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
