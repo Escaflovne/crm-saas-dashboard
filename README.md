@@ -1,12 +1,10 @@
 # CRM SaaS Dashboard
 
-Target architecture: Vite + React + TypeScript SPA for a CRM SaaS Dashboard.
+CRM SaaS Dashboard is now a Vite + React + TypeScript single-page application.
+The Next.js migration baseline is complete, and browser routing is handled by
+React Router.
 
-Migration note: this repository is still currently scaffolded as a Next.js app.
-The migration to Vite, React Router, and SPA routing is pending and must happen
-through nano-tickets.
-
-Target package scripts after migration:
+Package scripts:
 
 - `dev`: `vite`
 - `build`: `tsc -b && vite build`
@@ -15,10 +13,11 @@ Target package scripts after migration:
 
 ## Getting Started
 
-Current scaffold development command:
+Start the Vite development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Vite will print the local development URL in the terminal, typically
+`http://localhost:5173`.
