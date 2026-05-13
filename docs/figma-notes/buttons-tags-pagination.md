@@ -107,7 +107,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Outline buttons with icon | Partially ready | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; preserve Outline icon Active label weight `900` | No |
 | Color options | Partially documented / closed for now | Filled color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, source metadata, and icon/source details remain TBD | No |
 | Color outline | Partially documented / closed for now | Outline color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, and source metadata remain TBD | No |
-| Tags | Not ready | Extract tag states, colors, dimensions, typography, radius, and close/icon behavior if present | No |
+| Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
 | Pagination | Not ready | Extract item states, dimensions, typography, icons, active/resting/disabled colors, and spacing | No |
 | Progress bars | Not ready | Extract dimensions, fill/background colors, radius, value states, and label behavior if present | No |
 | Tabs primary | Not ready | Extract tab states, dimensions, typography, active/resting colors, indicator values, and spacing | No |
@@ -535,6 +535,27 @@ Tags / GreyEditable label and close icon details:
 | Selection/interaction behavior, if present | TBD |
 | Figma source metadata | TBD |
 | Whether Tags and Badge/status tag variants should be separate scopes | TBD |
+
+## Tags Closure Notes
+
+- Tags are sufficiently documented for preparation boundary purposes, but not
+  implementation-ready.
+- Confirmed visible variants are Tags / Primary, Tags / Blue, Tags /
+  LightBlue, Tags / Green, Tags / Yellow, Tags / Red, Tags / Grey, and Tags /
+  GreyEditable.
+- Regular tag labels use Lato normal `700`, `14px`, line-height `21px`.
+- Text alignment is Center where present.
+- Visible tag backgrounds use `8px` border radius.
+- Visible backgrounds and label colors are documented in the Tags group
+  extraction sample.
+- Tags / GreyEditable includes a documented close icon.
+- State semantics remain TBD.
+- Additional states remain TBD.
+- Tag pixel dimensions were not inferred from percentage positioning.
+- Selection/interaction behavior remains TBD.
+- Figma source metadata remains TBD.
+- Tags vs Badge/status tag scope separation remains TBD.
+- Other icon behavior remains TBD if present.
 
 ## Implementation Readiness
 
