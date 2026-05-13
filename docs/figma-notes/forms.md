@@ -28,7 +28,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Labels | Not ready | TBD | No |
 | Helper text | Not ready | TBD | No |
 | Validation messages | Not ready | TBD | No |
-| Select/dropdown fields, if present | Partially documented | Copied Select fields active samples documented; select/open/closed/hover/focus/active/selected behavior, source metadata, and component API remain TBD | No |
+| Select/dropdown fields, if present | Partially documented / closed for now | Copied Select fields active samples documented; select/open/closed/hover/focus/active/selected behavior, source metadata, and component API remain TBD | No |
 | Search fields, if present | Not ready | TBD | No |
 | Textarea, if present | Not ready | TBD | No |
 | Checkbox/radio/switch, if present | Not ready | TBD | No |
@@ -893,6 +893,27 @@ Shared copied trigger child values:
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
+
+## Select Fields Active Closure Notes
+
+- Select fields active samples are partially documented and closed for
+  preparation boundary purposes, but Forms remain not implementation-ready.
+- Confirmed sample coverage includes `SelectFieldsActive`, three repeated
+  `Forms / Input / Active Icon on Right` trigger inputs, `Dropdown`, `Dropdown
+  Icons`, and the second copied `Dropdown` with `hover bg`.
+- Copied absolute positions and percentage offsets are documentation evidence
+  only, not normalized implementation values.
+- `hover bg` is a copied Figma layer name and must not be normalized into
+  hover behavior assumptions.
+- Repeated copied names such as `Dropdown`, `Title`, and `Forms / Input /
+  Active Icon on Right` are preserved as Figma evidence and must not be
+  normalized.
+- Icon font-family `la-solid-900` is documented as copied font-family evidence
+  only; icon source/library mapping remains TBD.
+- Select/open/closed/hover/focus/active/selected behavior semantics,
+  responsive behavior, source metadata, Auto Layout spacing/gap/padding, and
+  component API/scope decisions remain TBD.
+- Additional select/dropdown states remain TBD.
 
 ## Text Fields Closure Notes
 
