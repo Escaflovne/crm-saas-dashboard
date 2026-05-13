@@ -101,10 +101,10 @@ padding/gap is a confirmed limitation and must not be invented.
 
 | Group | Current status | Remaining extraction needs | Code implementation allowed |
 | --- | --- | --- | --- |
-| Plain Primary buttons | Ready | Preparation values are sufficiently documented; Auto Layout padding/gap is unavailable for inspected frames | No |
-| Plain Outline buttons | Partially ready | Closed for now; Outline buttons / Hover full Copy-as-CSS is unavailable and not reliably selectable at this stage | No |
-| Primary buttons with icon | Partially ready | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; Primary Arrow-only has dimensions but no full visual-value row | No |
-| Outline buttons with icon | Partially ready | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; preserve Outline icon Active label weight `900` | No |
+| Plain Primary buttons | Partially documented / closed for now | Preparation values are sufficiently documented; Auto Layout padding/gap is unavailable for inspected frames | No |
+| Plain Outline buttons | Partially documented / closed for now | Outline buttons / Hover full Copy-as-CSS is unavailable and not reliably selectable at this stage | No |
+| Primary buttons with icon | Partially documented / closed for now | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; Primary Arrow-only has dimensions but no full visual-value row | No |
+| Outline buttons with icon | Partially documented / closed for now | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; preserve Outline icon Active label weight `900` | No |
 | Color options | Partially documented / closed for now | Filled color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, source metadata, and icon/source details remain TBD | No |
 | Color outline | Partially documented / closed for now | Outline color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, and source metadata remain TBD | No |
 | Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
@@ -1131,9 +1131,9 @@ Group context metadata, not badge or status tag variants:
 
 ## Implementation Readiness
 
-Button implementation status: Not ready.
+Documented UI implementation status: Not ready.
 
-Implementation blockers:
+Implementation blockers include:
 
 - Auto Layout padding/gap values are unavailable for the inspected
   Primary/Outline button frames.
