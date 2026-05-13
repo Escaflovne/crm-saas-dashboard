@@ -557,6 +557,24 @@ Tags / GreyEditable label and close icon details:
 - Tags vs Badge/status tag scope separation remains TBD.
 - Other icon behavior remains TBD if present.
 
+## Pagination Extraction Notes
+
+Pagination is not implementation-ready. No confirmed Pagination-specific Figma
+values are available yet.
+
+| Extraction item | Status |
+| --- | --- |
+| Item/state names | TBD |
+| Active/resting/disabled/hover states, if present | TBD |
+| Container dimensions | TBD |
+| Item dimensions | TBD |
+| Typography | TBD |
+| Icons and icon source/library mapping | TBD |
+| Colors per state | TBD |
+| Spacing/gap | TBD |
+| Selection/current-page behavior | TBD |
+| Figma source metadata | TBD |
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
