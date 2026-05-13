@@ -108,7 +108,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Color options | Partially documented / closed for now | Filled color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, source metadata, and icon/source details remain TBD | No |
 | Color outline | Partially documented / closed for now | Outline color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, and source metadata remain TBD | No |
 | Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
-| Pagination | Not ready | Extract item states, dimensions, typography, icons, active/resting/disabled colors, and spacing | No |
+| Pagination | Partially documented | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
 | Progress bars | Not ready | Extract dimensions, fill/background colors, radius, value states, and label behavior if present | No |
 | Tabs primary | Not ready | Extract tab states, dimensions, typography, active/resting colors, indicator values, and spacing | No |
 | Badge & status tag | Not ready | Extract status variants, colors, dimensions, typography, radius, and icon behavior if present | No |
@@ -559,20 +559,108 @@ Tags / GreyEditable label and close icon details:
 
 ## Pagination Extraction Notes
 
-Pagination is not implementation-ready. No confirmed Pagination-specific Figma
-values are available yet.
+Pagination is not implementation-ready. The Copy-as-CSS block below is for the
+visible `Pagination` group. Do not infer responsive behavior, hover/resting/
+disabled behavior, or implementation semantics from layer names such as
+`bg active`, `bg copy`, or `Buttons/Link Button/Active`.
+
+### Pagination group extraction sample
+
+Group container metadata:
+
+| Property | Confirmed value |
+| --- | --- |
+| Group name | `Pagination` |
+| Position | `absolute` |
+| Width | `1141px` |
+| Height | `217px` |
+| Left | `149px` |
+| Top | `1126px` |
+
+Group context metadata, not pagination variants:
+
+| Context item | Confirmed values |
+| --- | --- |
+| Pagination title | Lato normal `700`; `16px`; line-height `24px`; color `#1C1D21` |
+| Line | Border `1px solid #EEEEEE` |
+
+Visible variants are `Pagination/Primary`, `Pagination/Boxed`, and
+`Pagination/Fullsize`.
+
+#### Pagination/Primary
+
+| Property | Confirmed value |
+| --- | --- |
+| Parent left | `0.09%` |
+| Parent right | `57.58%` |
+| Parent top | `44.93%` |
+| Parent bottom | `36.64%` |
+| Numbers container width | `215px` |
+| Numbers container height | `32px` |
+| Active background color | `#5E81F4` |
+| Active background radius | `6px` |
+| Number typography | Lato normal `700`; `14px`; line-height `21px`; Center |
+| Page 2 color | `#FFFFFF` |
+| Pages 1/3/4/5 color | `#1C1D21` |
+| Left control | `79px` width; `40px` height |
+| Right control | `80px` width; `40px` height |
+| Arrow background | `#F5F5FA`; radius `6px` |
+| Arrow icon typography | `la-solid-900`; weight `400`; `18px`; line-height `18px`; color `#8181A5` |
+| Prev/Next label typography | Lato normal `400`; `14px`; line-height `21px`; color `#8181A5` |
+
+#### Pagination/Boxed
+
+| Property | Confirmed value |
+| --- | --- |
+| Parent left | `0.09%` |
+| Parent right | `57.58%` |
+| Parent top | `81.57%` |
+| Parent bottom | `0%` |
+| Visible item backgrounds | White backgrounds with `6px` radius |
+| Active/selected page 2 | White background with `1px solid #ECECF2`; radius `6px` |
+| Number typography | Lato normal `700`; `14px`; line-height `21px`; Center |
+| Page 2 color | `#1C1D21` |
+| Pages 1/3/4/5 color | `#8181A5` |
+| Left/right arrow controls | `40px x 40px` |
+| Arrow backgrounds | `#F5F5FA`; radius `6px` |
+| Arrow icon typography | `la-solid-900`; weight `400`; `18px`; line-height `18px`; color `#8181A5` |
+
+#### Pagination/Fullsize
+
+| Property | Confirmed value |
+| --- | --- |
+| Parent left | `50.57%` |
+| Parent right | `0.09%` |
+| Parent top | `45.16%` |
+| Parent bottom | `18.43%` |
+| Numbers container width | `211px` |
+| Numbers container height | `61px` |
+| Active underline | `2px` height; background `#5E81F4` |
+| Number item backgrounds | `36px x 36px`; radius `6px` |
+| Page 2 background | `linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF` |
+| Pages 1/3/4/5 backgrounds | `#F5F5FA` |
+| Number typography | Lato normal `700`; `14px`; line-height `32px`; letter-spacing `0.21px`; Center |
+| Page 2 color | `#5E81F4` |
+| Pages 1/3/4/5 color | `#1C1D21` |
+| Prev and Next controls | `82px x 36px` |
+| Prev/Next background | `#8181A5` at `0.1` opacity; radius `6px` |
+| Prev/Next label typography | Lato normal `900`; `12px`; line-height `14px`; uppercase; color `#8181A5` |
+| Prev/Next icon typography | `la-solid-900`; weight `400`; `18px`; line-height `18px`; color `#8181A5` |
+| Fullsize Prev internal link button | Auto-layout row direction; center alignment; gap `5px`; width `54px`; height `18px` |
 
 | Extraction item | Status |
 | --- | --- |
-| Item/state names | TBD |
-| Active/resting/disabled/hover states, if present | TBD |
-| Container dimensions | TBD |
-| Item dimensions | TBD |
-| Typography | TBD |
-| Icons and icon source/library mapping | TBD |
-| Colors per state | TBD |
-| Spacing/gap | TBD |
+| Item/state names | Visible variants documented; exact state semantics TBD |
+| Active/resting/disabled/hover states, if present | Active/selected sample values documented where visible; disabled/hover behavior TBD |
+| Container dimensions | Group and visible container dimensions documented where provided |
+| Item dimensions | Visible item/control dimensions documented where provided; dimensions not inferred from percentages |
+| Typography | Visible typography documented |
+| Icons and icon source/library mapping | Copied icon font family documented; source/library mapping TBD |
+| Colors per state | Visible colors documented; additional states TBD |
+| Spacing/gap | Fullsize Prev internal gap documented; other spacing/gap TBD |
 | Selection/current-page behavior | TBD |
+| Responsive behavior | TBD |
+| Whether the three variants should become one component with variants or separate components later | TBD |
 | Figma source metadata | TBD |
 
 ## Implementation Readiness
