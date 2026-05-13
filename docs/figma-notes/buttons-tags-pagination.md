@@ -156,6 +156,38 @@ Color options are not implementation-ready. The only currently confirmed fact
 is that `#7CE7AC` is associated with Color options. No complete Color options
 row or state is documented yet.
 
+### Green filled color option sample
+
+Screenshot context confirms the selected button is inside the Color options
+group. The selected frame dimension is `98px x 46px`, and the selected button
+appears to be the first green Color options button. The Copy-as-CSS comment
+still says `Buttons / Plain / Primary / Active`; this naming mismatch is
+preserved here and must not be used to reopen Plain Primary notes.
+
+| Property | Confirmed value |
+| --- | --- |
+| Exact Color options variant/state name | TBD |
+| Copy-as-CSS comment | `Buttons / Plain / Primary / Active` |
+| Parent position | `absolute` |
+| Parent left | `0.18%` |
+| Parent right | `82.03%` |
+| Parent top | `65.3%` |
+| Parent bottom | `0.37%` |
+| Frame dimension | `98px x 46px` |
+| Background | `#7CE7AC` |
+| Border radius | `8px` |
+| Label height | `17px` |
+| Label left | `32.65%` |
+| Label right | `32.65%` |
+| Label top | `calc(50% - 17px/2 - 0.5px)` |
+| Label font family | Lato |
+| Label font style | normal |
+| Label font weight | `700` |
+| Label font size | `14px` |
+| Label line height | `17px` |
+| Label text alignment | Center |
+| Label color | `#FFFFFF` |
+
 | Extraction item | Status |
 | --- | --- |
 | Variant/state names | TBD |
