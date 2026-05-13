@@ -166,6 +166,21 @@ row or state is documented yet.
 | Selection behavior | TBD |
 | Figma source metadata, if available | TBD |
 
+## Color Outline Extraction Notes
+
+Color outline is not implementation-ready. No confirmed Color outline values
+are documented yet.
+
+| Extraction item | Status |
+| --- | --- |
+| Variant/state names | TBD |
+| Colors per state | TBD |
+| Border values | TBD |
+| Dimensions | TBD |
+| Typography | TBD |
+| Selection behavior | TBD |
+| Figma source metadata, if available | TBD |
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
