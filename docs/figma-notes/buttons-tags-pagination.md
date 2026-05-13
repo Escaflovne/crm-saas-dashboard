@@ -105,8 +105,8 @@ padding/gap is a confirmed limitation and must not be invented.
 | Plain Outline buttons | Partially ready | Closed for now; Outline buttons / Hover full Copy-as-CSS is unavailable and not reliably selectable at this stage | No |
 | Primary buttons with icon | Partially ready | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; Primary Arrow-only has dimensions but no full visual-value row | No |
 | Outline buttons with icon | Partially ready | Icon button Auto Layout spacing unavailable/TBD; icon source/library mapping TBD; dimensions for uninspected icon variants TBD; preserve Outline icon Active label weight `900` | No |
-| Color options | Not ready | Extract states, colors, dimensions, typography, icon/source details, and selection behavior | No |
-| Color outline | Not ready | Extract states, colors, dimensions, border values, typography, and selection behavior | No |
+| Color options | Partially documented / closed for now | Filled color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, source metadata, and icon/source details remain TBD | No |
+| Color outline | Partially documented / closed for now | Outline color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, and source metadata remain TBD | No |
 | Tags | Not ready | Extract tag states, colors, dimensions, typography, radius, and close/icon behavior if present | No |
 | Pagination | Not ready | Extract item states, dimensions, typography, icons, active/resting/disabled colors, and spacing | No |
 | Progress bars | Not ready | Extract dimensions, fill/background colors, radius, value states, and label behavior if present | No |
@@ -152,9 +152,8 @@ padding/gap is a confirmed limitation and must not be invented.
 
 ## Color Options Extraction Notes
 
-Color options are not implementation-ready. The only currently confirmed fact
-is that `#7CE7AC` is associated with Color options. No complete Color options
-row or state is documented yet.
+Color options are not implementation-ready. Filled color samples are documented
+below, but exact Color options variant/state names remain TBD.
 
 ### Green filled color option sample
 
@@ -441,6 +440,26 @@ names remain TBD.
 | Typography | TBD |
 | Selection behavior | TBD |
 | Figma source metadata, if available | TBD |
+
+## Color Button Closure Notes
+
+- Color options and Color outline are sufficiently documented for preparation
+  boundary purposes, but not implementation-ready.
+- Confirmed Color options samples are green `#7CE7AC`, red `#FF808B`,
+  yellow/gold `#F4BE5E`, and purple/lavender `#9698D6`.
+- Confirmed Color outline samples are green border/label `#7CE7AC`, red
+  border/label `#FF808B`, yellow/gold border/label `#F4BE5E`, and gray purple
+  border/label `#8181A5`.
+- Color options Copy-as-CSS says `Buttons / Plain / Primary / Active`; this
+  naming mismatch must not reopen Plain Primary notes.
+- Color outline Copy-as-CSS says `Buttons / Plain / Outline / ActiveButton`;
+  this naming mismatch must not reopen Plain Outline notes.
+- Exact variant/state names remain TBD.
+- Additional states remain unknown.
+- Dimensions are incomplete.
+- Selection behavior remains TBD.
+- Figma source metadata remains TBD.
+- Icon/source details remain TBD if present.
 
 ## Implementation Readiness
 
