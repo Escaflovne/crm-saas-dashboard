@@ -22,7 +22,8 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Filled state | Not ready | TBD | No |
 | Placeholder state | Not ready | TBD | No |
 | Focus state | Not ready | TBD | No |
-| Error state | Not ready | TBD | No |
+| Error state | Partially documented | Copied error state samples documented; validation semantics, behavior, source metadata, and component API remain TBD | No |
+| Success state | Partially documented | Copied success state samples documented; validation semantics, behavior, source metadata, and component API remain TBD | No |
 | Disabled state | Not ready | TBD | No |
 | Labels | Not ready | TBD | No |
 | Helper text | Not ready | TBD | No |
@@ -464,7 +465,222 @@ Embedded editable tag chip:
 | Icon presence and icon source mapping, if applicable | `la-solid-900` documented as copied font-family evidence only; icon source/library mapping TBD |
 | Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
 | Focus/hover/active/disabled/error behavior | Copied layer names documented; behavior semantics TBD |
-| Validation semantics | TBD |
+| Validation semantics | Error and Success copied samples documented; validation behavior semantics TBD |
+| Responsive behavior | TBD |
+| Source metadata | TBD |
+| Component scope/API decision | TBD |
+
+## Text Fields States Extraction Notes
+
+Text fields states are not implementation-ready. The extracted sample below
+documents copied Figma values only. Layer names such as `Error`, `Success`,
+`Error with Icon`, `Success with Icon`, `Start typing…`, and `Field title` are
+preserved as copied Figma evidence and must not be normalized into validation
+or interaction behavior assumptions.
+
+Group context from screenshot:
+
+| Property | Confirmed value |
+| --- | --- |
+| Visible section label | Text fields states |
+| Screenshot-selected group dimensions | `751 × 200` |
+
+### Forms / Input / States / Error
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Forms / Input / States / Error` |
+| Position | `absolute` |
+| Width | `360px` |
+| Height | `72px` |
+| Left | `149px` |
+| Top | `723px` |
+| Background position | `absolute` |
+| Background width | `360px` |
+| Background height | `1px` |
+| Background left | `0px` |
+| Background bottom | `0px` |
+| Background color | `#FF808B` |
+| Text layer name | `Start typing…` |
+| Text position | `absolute` |
+| Text width | `29px` |
+| Text height | `21px` |
+| Text left | `0px` |
+| Text top | `36px` |
+| Text font family | Lato |
+| Text font style | normal |
+| Text font weight | `700` |
+| Text font size | `14px` |
+| Text line height | `21px` |
+| Text color | `#1C1D21` |
+| Field title position | `absolute` |
+| Field title width | `58px` |
+| Field title height | `21px` |
+| Field title left | `0px` |
+| Field title top | `10px` |
+| Field title font family | Lato |
+| Field title font style | normal |
+| Field title font weight | `400` |
+| Field title font size | `14px` |
+| Field title line height | `21px` |
+| Field title color | `#8181A5` |
+
+### Forms / Input / States / Success
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Forms / Input / States / Success` |
+| Position | `absolute` |
+| Width | `360px` |
+| Height | `72px` |
+| Left | `540px` |
+| Top | `723px` |
+| Background position | `absolute` |
+| Background width | `360px` |
+| Background height | `1px` |
+| Background left | `0px` |
+| Background bottom | `0px` |
+| Background color | `#7CE7AC` |
+| Text layer name | `Start typing…` |
+| Text position | `absolute` |
+| Text width | `29px` |
+| Text height | `21px` |
+| Text left | `0px` |
+| Text top | `36px` |
+| Text font family | Lato |
+| Text font style | normal |
+| Text font weight | `700` |
+| Text font size | `14px` |
+| Text line height | `21px` |
+| Text color | `#1C1D21` |
+| Field title position | `absolute` |
+| Field title width | `58px` |
+| Field title height | `21px` |
+| Field title left | `0px` |
+| Field title top | `10px` |
+| Field title font family | Lato |
+| Field title font style | normal |
+| Field title font weight | `400` |
+| Field title font size | `14px` |
+| Field title line height | `21px` |
+| Field title color | `#8181A5` |
+
+### Forms / Input / States / Error with Icon
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Forms / Input / States / Error with Icon` |
+| Position | `absolute` |
+| Width | `360px` |
+| Height | `72px` |
+| Left | `149px` |
+| Top | `851px` |
+| Background position | `absolute` |
+| Background width | `360px` |
+| Background height | `1px` |
+| Background left | `0px` |
+| Background bottom | `0px` |
+| Background color | `#FF808B` |
+| Text layer name | `Start typing…` |
+| Text position | `absolute` |
+| Text width | `29px` |
+| Text height | `21px` |
+| Text left | `0px` |
+| Text top | `36px` |
+| Text font family | Lato |
+| Text font style | normal |
+| Text font weight | `700` |
+| Text font size | `14px` |
+| Text line height | `21px` |
+| Text color | `#1C1D21` |
+| Field title position | `absolute` |
+| Field title width | `58px` |
+| Field title height | `21px` |
+| Field title left | `0px` |
+| Field title top | `10px` |
+| Field title font family | Lato |
+| Field title font style | normal |
+| Field title font weight | `400` |
+| Field title font size | `14px` |
+| Field title line height | `21px` |
+| Field title color | `#8181A5` |
+| Icon position | `absolute` |
+| Icon width | `18px` |
+| Icon height | `18px` |
+| Icon right | `0px` |
+| Icon top | `36px` |
+| Icon font family | `la-solid-900` |
+| Icon font style | normal |
+| Icon font weight | `400` |
+| Icon font size | `18px` |
+| Icon line height | `18px` |
+| Icon text alignment | Center |
+| Icon color | `#FF808B` |
+
+### Forms / Input / States / Success with Icon
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Forms / Input / States / Success with Icon` |
+| Position | `absolute` |
+| Width | `360px` |
+| Height | `72px` |
+| Left | `540px` |
+| Top | `851px` |
+| Background position | `absolute` |
+| Background width | `360px` |
+| Background height | `1px` |
+| Background left | `0px` |
+| Background bottom | `0px` |
+| Background color | `#7CE7AC` |
+| Text layer name | `Start typing…` |
+| Text position | `absolute` |
+| Text width | `29px` |
+| Text height | `21px` |
+| Text left | `0px` |
+| Text top | `36px` |
+| Text font family | Lato |
+| Text font style | normal |
+| Text font weight | `700` |
+| Text font size | `14px` |
+| Text line height | `21px` |
+| Text color | `#1C1D21` |
+| Field title position | `absolute` |
+| Field title width | `58px` |
+| Field title height | `21px` |
+| Field title left | `0px` |
+| Field title top | `10px` |
+| Field title font family | Lato |
+| Field title font style | normal |
+| Field title font weight | `400` |
+| Field title font size | `14px` |
+| Field title line height | `21px` |
+| Field title color | `#8181A5` |
+| Icon position | `absolute` |
+| Icon width | `18px` |
+| Icon height | `18px` |
+| Icon right | `0px` |
+| Icon top | `36px` |
+| Icon font family | `la-solid-900` |
+| Icon font style | normal |
+| Icon font weight | `400` |
+| Icon font size | `18px` |
+| Icon line height | `18px` |
+| Icon text alignment | Center |
+| Icon color | `#7CE7AC` |
+
+### Text fields states extraction status
+
+| Extraction item | Status |
+| --- | --- |
+| Visible variants/items | Error and Success state samples documented; broader Forms states TBD |
+| Dimensions | Copied dimensions documented where provided |
+| Typography | Visible text field state typography documented |
+| Colors | Visible error/success divider and icon colors documented |
+| Background/border/radius | Divider color values documented; broader border/radius states TBD |
+| Icon presence and icon source mapping, if applicable | `la-solid-900` documented as copied font-family evidence only; icon source/library mapping TBD |
+| Focus/hover/active/disabled/error/success behavior | Copied Error and Success layer names documented; behavior semantics TBD |
+| Validation semantics | Copied Error and Success layer names documented; validation semantics TBD |
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
