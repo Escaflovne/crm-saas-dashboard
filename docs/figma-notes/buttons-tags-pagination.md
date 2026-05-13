@@ -101,8 +101,8 @@ padding/gap is a confirmed limitation and must not be invented.
 
 | Group | Current status | Remaining extraction needs | Code implementation allowed |
 | --- | --- | --- | --- |
-| Plain Primary buttons | Partially ready | Auto Layout padding/gap; confirm dimensions for any uninspected variants | No |
-| Plain Outline buttons | Partially ready | Outline buttons / Hover full Copy-as-CSS values; Auto Layout padding/gap; confirm dimensions for any uninspected variants | No |
+| Plain Primary buttons | Ready | Preparation values are sufficiently documented; Auto Layout padding/gap is unavailable for inspected frames | No |
+| Plain Outline buttons | Partially ready | Closed for now; Outline buttons / Hover full Copy-as-CSS is unavailable and not reliably selectable at this stage | No |
 | Primary buttons with icon | Partially ready | Icon button Auto Layout spacing; icon source/library mapping; confirm dimensions for any uninspected variants | No |
 | Outline buttons with icon | Partially ready | Icon button Auto Layout spacing; icon source/library mapping; confirm dimensions for any uninspected variants | No |
 | Color options | Not ready | Extract states, colors, dimensions, typography, icon/source details, and selection behavior | No |
@@ -115,18 +115,37 @@ padding/gap is a confirmed limitation and must not be invented.
 | Token mapping review | Deferred | Map confirmed extracted values to implementation token names after extraction is complete | No |
 | Final readiness check | Deferred | Verify all required values are extracted and no implementation blockers remain | No |
 
+## Plain Button Closure Notes
+
+- Plain Primary buttons are sufficiently documented for preparation. Confirmed
+  values include Copy-as-CSS state data and inspected parent-frame dimensions
+  for the documented variants.
+- Plain Outline buttons are partially documented but closed for now. Confirmed
+  values include ActiveButton and Resting Copy-as-CSS values plus
+  screenshot-confirmed Hover dimensions and selection colors.
+- The latest Copy-as-CSS block confirms `Buttons / Plain / Outline / Resting`,
+  not Outline Hover: background `#FFFFFF`, border `1px solid #5E81F4`, radius
+  `8px`, label Lato `700`, `14px`, `17px`, and label color `#1C1D21`.
+- Outline buttons / Hover full Copy-as-CSS is unavailable and not reliably
+  selectable at this stage. Hover remains screenshot-confirmed only for the
+  dimensions and selection colors documented above.
+- Auto Layout padding/gap is unavailable for inspected plain button frames.
+  Implementation must not invent padding/gap; if Auto Layout is absent, use
+  confirmed frame dimensions and measured child positions.
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
 
 Implementation blockers:
 
-- No Auto Layout padding/gap values are currently visible or confirmed for the
-  inspected Primary/Outline button frames.
+- Auto Layout padding/gap values are unavailable for the inspected
+  Primary/Outline button frames.
 - Button implementation must not invent padding/gap.
 - If Auto Layout is not present in Figma, implementation must rely on confirmed
   frame dimensions and measured child positions instead.
-- Outline buttons / Hover full Copy-as-CSS values are unconfirmed.
+- Outline buttons / Hover full Copy-as-CSS values are unavailable and not
+  reliably selectable at this stage.
 - Icon button Auto Layout spacing is TBD.
 - Icon source/library mapping is TBD.
 - Dimensions for uninspected variants are TBD.
