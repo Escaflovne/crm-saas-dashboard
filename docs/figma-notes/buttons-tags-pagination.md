@@ -109,7 +109,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Color outline | Partially documented / closed for now | Outline color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, and source metadata remain TBD | No |
 | Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
 | Pagination | Partially documented / closed for now | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
-| Progress bars | Partially documented | Visible Progress bar variants documented; exact state/value semantics, pixel dimensions, labels, responsive behavior, source metadata, and component scope remain TBD | No |
+| Progress bars | Partially documented / closed for now | Visible Progress bar variants documented; exact state/value semantics, pixel dimensions, labels, responsive behavior, source metadata, and component scope remain TBD | No |
 | Tabs primary | Not ready | Extract tab states, dimensions, typography, active/resting colors, indicator values, and spacing | No |
 | Badge & status tag | Not ready | Extract status variants, colors, dimensions, typography, radius, and icon behavior if present | No |
 | Token mapping review | Deferred | Map confirmed extracted values to implementation token names after extraction is complete | No |
@@ -746,6 +746,26 @@ Shared confirmed facts:
 | Responsive behavior | TBD |
 | Figma source metadata | TBD |
 | Whether Progress bars are one component with variants or multiple component scopes | TBD |
+
+## Progress Bars Closure Notes
+
+- Progress bars are partially documented and closed for preparation boundary
+  purposes, but not implementation-ready.
+- Confirmed visible variants are Progress Bars / High, Progress Bars / Medium,
+  Progress Bars / Low, Progress Bars/Full, Progress Bars / Primary, and
+  Progress Bars/Resting.
+- Track/background color is `#F5F5FA` where visible.
+- Fill/background radius is documented as `3px`.
+- No visible labels or values are confirmed inside the bars.
+- Copied right offsets are documentation evidence only, not normalized
+  implementation-ready progress values.
+- Full has no background layer visible in the copied values.
+- Resting has no fill layer visible in the copied values.
+- Exact state/value semantics remain TBD.
+- Track and fill pixel dimensions remain TBD.
+- Label/value behavior remains TBD.
+- Responsive behavior remains TBD.
+- Component API and component-scope decisions remain TBD.
 
 ## Implementation Readiness
 
