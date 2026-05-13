@@ -150,6 +150,22 @@ padding/gap is a confirmed limitation and must not be invented.
 - Primary Arrow-only currently has documented dimensions, but no full
   visual-value row.
 
+## Color Options Extraction Notes
+
+Color options are not implementation-ready. The only currently confirmed fact
+is that `#7CE7AC` is associated with Color options. No complete Color options
+row or state is documented yet.
+
+| Extraction item | Status |
+| --- | --- |
+| Variant/state names | TBD |
+| Colors per state | TBD |
+| Dimensions | TBD |
+| Typography | TBD |
+| Icon/source details, if present | TBD |
+| Selection behavior | TBD |
+| Figma source metadata, if available | TBD |
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
