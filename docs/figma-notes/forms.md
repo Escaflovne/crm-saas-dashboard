@@ -28,7 +28,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Labels | Not ready | TBD | No |
 | Helper text | Not ready | TBD | No |
 | Validation messages | Not ready | TBD | No |
-| Select/dropdown fields, if present | Not ready | TBD | No |
+| Select/dropdown fields, if present | Partially documented | Copied Select fields active samples documented; select/open/closed/hover/focus/active/selected behavior, source metadata, and component API remain TBD | No |
 | Search fields, if present | Not ready | TBD | No |
 | Textarea, if present | Not ready | TBD | No |
 | Checkbox/radio/switch, if present | Not ready | TBD | No |
@@ -704,6 +704,195 @@ Group context from screenshot:
   metadata, Auto Layout spacing/gap/padding, and component API/scope decisions
   remain TBD.
 - Additional form states remain TBD.
+
+## Select Fields Active Extraction Notes
+
+Select fields active samples are not implementation-ready. The extracted sample
+below documents copied Figma values only. Copied names such as `Dropdown`,
+`Dropdown Icons`, `Forms / Input / Active Icon on Right`, `hover bg`, `Title`,
+`Placeholder`, `Field title`, `Icon`, `Ico`, `IcoCopy`, `IcoCopy2`, and
+`IcoCopy3` are preserved as Figma evidence and must not be normalized into
+select, open, closed, hover, focus, active, selected, or component behavior
+assumptions.
+
+### SelectFieldsActive section title
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `SelectFieldsActive` |
+| Position | `absolute` |
+| Width | `132px` |
+| Height | `24px` |
+| Left | `149px` |
+| Top | `1046px` |
+| Font family | Lato |
+| Font style | normal |
+| Font weight | `700` |
+| Font size | `16px` |
+| Line height | `24px` |
+| Color | `#1C1D21` |
+
+### Select trigger inputs
+
+All three trigger inputs use the copied layer/name `Forms / Input / Active Icon
+on Right`. Repeated copied names are preserved exactly.
+
+| Trigger | Layer/name | Position | Width | Height | Left | Top | Background color |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Trigger input 1 | `Forms / Input / Active Icon on Right` | `absolute` | `360px` | `72px` | `150px` | `1103px` | `#ECECF2` |
+| Trigger input 2 | `Forms / Input / Active Icon on Right` | `absolute` | `360px` | `72px` | `540px` | `1103px` | `#ECECF2` |
+| Trigger input 3 | `Forms / Input / Active Icon on Right` | `absolute` | `360px` | `72px` | `934px` | `1103px` | `#5E81F4` |
+
+Shared copied trigger child values:
+
+| Property | Confirmed value |
+| --- | --- |
+| Background position | `absolute` |
+| Background height | `1px` |
+| Background left | `0%` |
+| Background right | `0%` |
+| Background bottom | `0px` |
+| Icon position | `absolute` |
+| Icon width | `18px` |
+| Icon height | `18px` |
+| Icon right | `0px` |
+| Icon top | `calc(50% - 18px/2 + 9px)` |
+| Icon font family | `la-solid-900` |
+| Icon font style | normal |
+| Icon font weight | `400` |
+| Icon font size | `18px` |
+| Icon line height | `18px` |
+| Icon text alignment | Center |
+| Icon color | `#1C1D21` |
+| Placeholder position | `absolute` |
+| Placeholder width | `29px` |
+| Placeholder height | `21px` |
+| Placeholder left | `0px` |
+| Placeholder top | `calc(50% - 21px/2 + 10.5px)` |
+| Placeholder font family | Lato |
+| Placeholder font style | normal |
+| Placeholder font weight | `700` |
+| Placeholder font size | `14px` |
+| Placeholder line height | `21px` |
+| Placeholder color | `#1C1D21` |
+| Field title position | `absolute` |
+| Field title width | `58px` |
+| Field title height | `21px` |
+| Field title left | `0px` |
+| Field title top | `calc(50% - 21px/2 - 15.5px)` |
+| Field title font family | Lato |
+| Field title font style | normal |
+| Field title font weight | `400` |
+| Field title font size | `14px` |
+| Field title line height | `21px` |
+| Field title color | `#8181A5` |
+
+### Dropdown
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Dropdown` |
+| Position | `absolute` |
+| Width | `360px` |
+| Height | `204px` |
+| Left | `149px` |
+| Top | `1192px` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `#FFFFFF` |
+| Box shadow | `0px 6px 20px rgba(153, 155, 168, 0.1)` |
+| Border radius | `4px` |
+
+| Item | Layer/name | Height | Left | Right | Top | Font | Color |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Title item 1 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 - 68.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+| Title item 2 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 - 22.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#5E81F4` |
+| Title item 3 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 + 23.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+| Title item 4 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 + 68.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+
+### Dropdown Icons
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Dropdown Icons` |
+| Position | `absolute` |
+| Width | `360px` |
+| Height | `204px` |
+| Left | `540px` |
+| Top | `1192px` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `#FFFFFF` |
+| Box shadow | `0px 6px 20px rgba(153, 155, 168, 0.1)` |
+| Border radius | `8px` |
+| Icons group layer/name | `Icons` |
+| Icons group position | `absolute` |
+| Icons group left | `4.44%` |
+| Icons group right | `90.56%` |
+| Icons group top | `11.27%` |
+| Icons group bottom | `12.25%` |
+
+| Item | Layer/name | Height | Left | Right | Top | Font | Color |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Title item 1 | `Title` | `21px` | `12.5%` | `65%` | `calc(50% - 21px/2 - 68.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+| Title item 2 | `Title` | `21px` | `12.5%` | `65%` | `calc(50% - 21px/2 - 22.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#5E81F4` |
+| Title item 3 | `Title` | `21px` | `12.5%` | `65%` | `calc(50% - 21px/2 + 23.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+| Title item 4 | `Title` | `21px` | `12.5%` | `65%` | `calc(50% - 21px/2 + 68.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+
+| Icon layer | Width | Height | Left | Top | Font | Color |
+| --- | --- | --- | --- | --- | --- | --- |
+| `Ico` | `18px` | `18px` | `calc(50% - 18px/2)` | `calc(50% - 18px/2 - 23px)` | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center | `#5E81F4` |
+| `IcoCopy` | `18px` | `18px` | `calc(50% - 18px/2)` | `calc(50% - 18px/2 - 69px)` | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center | `#1C1D21` |
+| `IcoCopy2` | `18px` | `18px` | `calc(50% - 18px/2)` | `calc(50% - 18px/2 + 24px)` | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center | `#1C1D21` |
+| `IcoCopy3` | `18px` | `18px` | `calc(50% - 18px/2)` | `calc(50% - 18px/2 + 69px)` | `la-solid-900` normal `400`, `18px`, line-height `18px`, Center | `#1C1D21` |
+
+### Dropdown
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Dropdown` |
+| Position | `absolute` |
+| Width | `360px` |
+| Height | `204px` |
+| Left | `933px` |
+| Top | `1192px` |
+| Background box sizing | `border-box` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `#FFFFFF` |
+| Border | `1px solid #ECECF2` |
+| Border radius | `8px` |
+| Hover bg layer/name | `hover bg` |
+| Hover bg position | `absolute` |
+| Hover bg left | `0%` |
+| Hover bg right | `0%` |
+| Hover bg top | `27.45%` |
+| Hover bg bottom | `50%` |
+| Hover bg background | `#F5F5FA` |
+
+| Item | Layer/name | Height | Left | Right | Top | Font | Color |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Title item 1 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 - 68.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+| Title item 2 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 - 22.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#5E81F4` |
+| Title item 3 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 + 23.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+| Title item 4 | `Title` | `21px` | `4.72%` | `72.78%` | `calc(50% - 21px/2 + 68.5px)` | Lato normal `700`, `14px`, line-height `21px` | `#1C1D21` |
+
+### Select fields active extraction status
+
+| Extraction item | Status |
+| --- | --- |
+| Visible variants/items | Trigger inputs and dropdown samples documented; broader select/dropdown variants TBD |
+| Dimensions | Copied dimensions documented where provided; percentage offsets not converted to pixel dimensions |
+| Typography | Visible trigger and dropdown typography documented |
+| Colors | Visible trigger, dropdown, title, icon, border, shadow, and hover bg colors documented |
+| Background/border/radius | Visible copied background, border, shadow, and radius values documented |
+| Icon presence and icon source mapping, if applicable | `la-solid-900` documented as copied font-family evidence only; icon source/library mapping TBD |
+| Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
+| Select/open/closed/hover/focus/active/selected behavior | Copied layer names documented; behavior semantics TBD |
+| Validation semantics | TBD |
+| Responsive behavior | TBD |
+| Source metadata | TBD |
+| Component scope/API decision | TBD |
 
 ## Text Fields Closure Notes
 
