@@ -685,6 +685,25 @@ Visible variants are `Pagination/Primary`, `Pagination/Boxed`, and
   components remains TBD.
 - Additional state colors/spacing beyond documented samples remain TBD.
 
+## Progress Bars Extraction Notes
+
+Progress bars are not implementation-ready. No confirmed Progress
+bar-specific Figma values are available yet.
+
+| Extraction item | Status |
+| --- | --- |
+| Variant names | TBD |
+| Track dimensions | TBD |
+| Fill dimensions or percentage/value examples | TBD |
+| Track/background colors | TBD |
+| Fill colors | TBD |
+| Radius | TBD |
+| Value states | TBD |
+| Label presence and label typography, if present | TBD |
+| Spacing/alignment | TBD |
+| Figma source metadata | TBD |
+| Whether Progress bars are one component with variants or multiple component scopes | TBD |
+
 ## Implementation Readiness
 
 Button implementation status: Not ready.
