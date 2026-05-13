@@ -17,7 +17,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 
 | Group | Current status | Remaining extraction needs | Code implementation allowed |
 | --- | --- | --- | --- |
-| Text inputs | Partially documented | Copied text field samples documented; behavior, validation semantics, responsive behavior, source metadata, and component API remain TBD | No |
+| Text inputs | Partially documented / closed for now | Copied text field samples documented; behavior, validation semantics, responsive behavior, source metadata, and component API remain TBD | No |
 | Short input / empty state | Not ready | TBD | No |
 | Filled state | Not ready | TBD | No |
 | Placeholder state | Not ready | TBD | No |
@@ -468,6 +468,30 @@ Embedded editable tag chip:
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
+
+## Text Fields Closure Notes
+
+- Text fields are partially documented and closed for preparation boundary
+  purposes, but Forms remain not implementation-ready.
+- Confirmed sample coverage includes `Forms / Input / Active Icon on Right`,
+  `Forms / Input / Active Icon on Left`, `Forms / Input / Inactive`,
+  `Forms / Input / Disabled`, `Forms / Input / Active Basic`, and the embedded
+  Basic tags field.
+- Copied absolute positions and percentage offsets are documentation evidence
+  only, not normalized implementation values.
+- Copied names such as `Active`, `Inactive`, `Disabled`, `Placeholder`,
+  `Start typing…`, `Tags`, `Tags / Grey`, `Tags / GreyEditable`, and
+  `bg hover` are preserved as Figma evidence and must not be normalized into
+  behavior assumptions.
+- Embedded Tags layers remain Forms sample evidence only and do not reopen the
+  previous Tags scope.
+- `Start typing…` must preserve the single ellipsis character.
+- Icon font-family `la-solid-900` is documented as copied font-family evidence
+  only; icon source/library mapping remains TBD.
+- Behavior semantics, validation semantics, responsive behavior, source
+  metadata, Auto Layout spacing/gap/padding, and component API/scope decisions
+  remain TBD.
+- Additional form groups and states remain TBD.
 
 ## Anti-Assumption Notes
 
