@@ -111,7 +111,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Pagination | Partially documented / closed for now | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
 | Progress bars | Partially documented / closed for now | Visible Progress bar variants documented; exact state/value semantics, pixel dimensions, labels, responsive behavior, source metadata, and component scope remain TBD | No |
 | Tabs primary | Partially documented / closed for now | Visible Tabs primary sample documented; disabled/focus/hover behavior, responsive behavior, icon source mapping, source metadata, and component API remain TBD | No |
-| Badge & status tag | Partially documented | Visible Badge & status tag sample documented; state semantics, behavior, responsiveness, source metadata, Tags relationship, and component API remain TBD | No |
+| Badge & status tag | Partially documented / closed for now | Visible Badge & status tag sample documented; state semantics, behavior, responsiveness, source metadata, Tags relationship, and component API remain TBD | No |
 | Token mapping review | Deferred | Map confirmed extracted values to implementation token names after extraction is complete | No |
 | Final readiness check | Deferred | Verify all required values are extracted and no implementation blockers remain | No |
 
@@ -1107,6 +1107,27 @@ Group context metadata, not badge or status tag variants:
 | Source metadata | TBD |
 | Relationship to existing Tags scope | Kept separate from existing Tags extraction notes; final relationship TBD |
 | Component scope/API decision | TBD |
+
+## Badge & Status Tag Closure Notes
+
+- Badge & status tag is partially documented and closed for preparation
+  boundary purposes, but not implementation-ready.
+- Confirmed sample coverage includes `Badge / Oval`, `Badge / Round`, and
+  `Tags / Status tag` copied Figma values.
+- Copied absolute positions and percentage offsets are documentation evidence
+  only, not normalized implementation values.
+- `bg hover`, `Online`, `Number`, and `Circle` are preserved as copied Figma
+  evidence only and must not be normalized into behavior assumptions.
+- Status semantics beyond the visible `Online` label remain TBD.
+- Badge count behavior from the copied `Number` layer remains TBD.
+- Additional status variants remain TBD.
+- Hover, focus, active, disabled, responsive, and interaction behavior remain
+  TBD.
+- Auto Layout spacing/gap/padding remains TBD.
+- Source metadata remains TBD.
+- Relationship to the existing Tags scope remains TBD; this scope stays
+  separate from the Tags extraction notes.
+- Component API and component-scope decisions remain TBD.
 
 ## Implementation Readiness
 
