@@ -252,6 +252,38 @@ except for background color and parent position.
 | Label text alignment | Center |
 | Label color | `#FFFFFF` |
 
+### Purple filled color option sample
+
+The purple/lavender sample belongs visually to the same Color options group/row
+as the green, red, and yellow samples. The Copy-as-CSS comment still says
+`Buttons / Plain / Primary / Active`; this naming mismatch is preserved here
+and must not be used to reopen Plain Primary notes. Based on the provided CSS
+values, this sample is structurally equivalent to the green, red, and yellow
+samples except for background color and parent position.
+
+| Property | Confirmed value |
+| --- | --- |
+| Exact Color options variant/state name | TBD |
+| Copy-as-CSS comment | `Buttons / Plain / Primary / Active` |
+| Parent position | `absolute` |
+| Parent left | `70.96%` |
+| Parent right | `11.25%` |
+| Parent top | `65.3%` |
+| Parent bottom | `0.37%` |
+| Background | `#9698D6` |
+| Border radius | `8px` |
+| Label height | `17px` |
+| Label left | `32.65%` |
+| Label right | `32.65%` |
+| Label top | `calc(50% - 17px/2 - 0.5px)` |
+| Label font family | Lato |
+| Label font style | normal |
+| Label font weight | `700` |
+| Label font size | `14px` |
+| Label line height | `17px` |
+| Label text alignment | Center |
+| Label color | `#FFFFFF` |
+
 | Extraction item | Status |
 | --- | --- |
 | Variant/state names | TBD |
