@@ -22,8 +22,8 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Filled state | Not ready | TBD | No |
 | Placeholder state | Not ready | TBD | No |
 | Focus state | Not ready | TBD | No |
-| Error state | Partially documented | Copied error state samples documented; validation semantics, behavior, source metadata, and component API remain TBD | No |
-| Success state | Partially documented | Copied success state samples documented; validation semantics, behavior, source metadata, and component API remain TBD | No |
+| Error state | Partially documented / closed for now | Copied error state samples documented; validation semantics, behavior, source metadata, and component API remain TBD | No |
+| Success state | Partially documented / closed for now | Copied success state samples documented; validation semantics, behavior, source metadata, and component API remain TBD | No |
 | Disabled state | Not ready | TBD | No |
 | Labels | Not ready | TBD | No |
 | Helper text | Not ready | TBD | No |
@@ -684,6 +684,26 @@ Group context from screenshot:
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
+
+## Text Fields States Closure Notes
+
+- Text field states are partially documented and closed for preparation
+  boundary purposes, but Forms remain not implementation-ready.
+- Confirmed sample coverage includes `Forms / Input / States / Error`,
+  `Forms / Input / States / Success`, `Forms / Input / States / Error with
+  Icon`, and `Forms / Input / States / Success with Icon`.
+- Copied absolute positions and dimensions are documentation evidence only,
+  not normalized implementation values.
+- `Error` and `Success` are copied Figma layer names and must not be
+  normalized into validation behavior assumptions.
+- `Start typing…` must preserve the single ellipsis character.
+- `751 × 200` must preserve the multiplication sign.
+- Icon font-family `la-solid-900` is documented as copied font-family evidence
+  only; icon source/library mapping remains TBD.
+- Validation semantics, behavior semantics, responsive behavior, source
+  metadata, Auto Layout spacing/gap/padding, and component API/scope decisions
+  remain TBD.
+- Additional form states remain TBD.
 
 ## Text Fields Closure Notes
 
