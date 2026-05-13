@@ -110,7 +110,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
 | Pagination | Partially documented / closed for now | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
 | Progress bars | Partially documented / closed for now | Visible Progress bar variants documented; exact state/value semantics, pixel dimensions, labels, responsive behavior, source metadata, and component scope remain TBD | No |
-| Tabs primary | Not ready | Extract tab states, dimensions, typography, active/resting colors, indicator values, and spacing | No |
+| Tabs primary | Partially documented | Visible Tabs primary sample documented; disabled/focus/hover behavior, responsive behavior, icon source mapping, source metadata, and component API remain TBD | No |
 | Badge & status tag | Not ready | Extract status variants, colors, dimensions, typography, radius, and icon behavior if present | No |
 | Token mapping review | Deferred | Map confirmed extracted values to implementation token names after extraction is complete | No |
 | Final readiness check | Deferred | Verify all required values are extracted and no implementation blockers remain | No |
@@ -769,20 +769,189 @@ Shared confirmed facts:
 
 ## Tabs Primary Extraction Notes
 
-Tabs primary is not implementation-ready. Extraction is pending, and no
-confirmed Tabs primary-specific Figma values are documented yet.
+Tabs primary is not implementation-ready. The extracted sample below documents
+copied Figma values only; it does not confirm responsive behavior, hover,
+focus, disabled, interaction behavior, Auto Layout spacing, icon source
+mapping, or component API.
+
+### Tabs primary group extraction sample
+
+Group container metadata:
+
+| Property | Confirmed value |
+| --- | --- |
+| Group/layer | `Tabs` |
+| Position | `absolute` |
+| Width | `551px` |
+| Height | `132px` |
+| Left | `149px` |
+| Top | `1639px` |
+
+Group context metadata, not tab variants:
+
+| Context item | Confirmed values |
+| --- | --- |
+| Section title `Tabs primary` | Position `absolute`; height `24px`; left `0%`; right `83.3%`; top `calc(50% - 24px/2 - 22.5px)`; Lato normal `700`; `16px`; line-height `24px`; color `#1C1D21` |
+| Line | Position `absolute`; left `0.18%`; right `0%`; top `0%`; bottom `99.24%`; border `1px solid #EEEEEE` |
+
+#### Text active tab
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer | `Tabs/Text/Active` |
+| Position | `absolute` |
+| Parent left | `0%` |
+| Parent right | `87.3%` |
+| Parent top | `67.8%` |
+| Parent bottom | `0.38%` |
+| Background box sizing | `border-box` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `#FFFFFF` |
+| Border | `1px solid #ECECF2` |
+| Border radius | `8px` |
+| Tab Title width | `34px` |
+| Tab Title height | `21px` |
+| Tab Title left | `calc(50% - 34px/2 - 0.5px)` |
+| Tab Title top | `calc(50% - 21px/2 + 0.5px)` |
+| Tab Title font family | Lato |
+| Tab Title font style | normal |
+| Tab Title font weight | `700` |
+| Tab Title font size | `14px` |
+| Tab Title line height | `21px` |
+| Tab Title text alignment | Center |
+| Tab Title color | `#1C1D21` |
+
+#### Icon active tab
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer | `Tabs / Icon / ActiveTab` |
+| Position | `absolute` |
+| Parent left | `47.55%` |
+| Parent right | `36.12%` |
+| Parent top | `67.8%` |
+| Parent bottom | `0.38%` |
+| Background position | `absolute` |
+| Background left/right/top/bottom | `0%` |
+| Background | `#5E81F4` |
+| Border radius | `8px` |
+| Text layer name | `Tab 1` |
+| Text width | `33px` |
+| Text height | `14px` |
+| Text left | `40px` |
+| Text top | `13px` |
+| Text font family | Lato |
+| Text font style | normal |
+| Text font weight | `900` |
+| Text font size | `12px` |
+| Text line height | `14px` |
+| Text transform | uppercase |
+| Text color | `#FFFFFF` |
+| Icon layer name | `ico` |
+| Icon width | `16px` |
+| Icon height | `16px` |
+| Icon left | `17px` |
+| Icon top | `calc(50% - 16px/2)` |
+| Icon font family | `la-solid-900` |
+| Icon font style | normal |
+| Icon font weight | `400` |
+| Icon font size | `16px` |
+| Icon line height | `16px` |
+| Icon text alignment | Center |
+| Icon color | `#FAFBFF` |
+
+#### Text resting tabs
+
+There are two copied `Tabs/Text/Resting` instances. The duplicated copied
+layer names are preserved exactly.
+
+| Instance | Position | Height | Left | Right | Top |
+| --- | --- | --- | --- | --- | --- |
+| `Tabs/Text/Resting` instance 1 | `absolute` | `42px` | `13.97%` | `73.32%` | `calc(50% - 42px/2 + 44.5px)` |
+| `Tabs/Text/Resting` instance 2 | `absolute` | `42px` | `28.13%` | `59.17%` | `calc(50% - 42px/2 + 44.5px)` |
+
+Shared Tab Title values:
+
+| Property | Confirmed value |
+| --- | --- |
+| Position | `absolute` |
+| Height | `21px` |
+| Left | `25.68%` |
+| Right | `25.75%` |
+| Top | `10px` |
+| Font family | Lato |
+| Font style | normal |
+| Font weight | `700` |
+| Font size | `14px` |
+| Line height | `21px` |
+| Text alignment | Center |
+| Color | `#8181A5` |
+
+#### Icon resting tabs
+
+There are two copied `Tabs / Icon / RestingTab` instances. The duplicated
+copied `Tab 2` text layer names are preserved exactly.
+
+| Instance | Position | Height | Left | Right | Top |
+| --- | --- | --- | --- | --- | --- |
+| `Tabs / Icon / RestingTab` instance 1 | `absolute` | `42px` | `65.15%` | `18.51%` | `calc(50% - 42px/2 + 44.5px)` |
+| `Tabs / Icon / RestingTab` instance 2 | `absolute` | `42px` | `82.94%` | `0.73%` | `calc(50% - 42px/2 + 44.5px)` |
+
+Shared rectangle values:
+
+| Property | Confirmed value |
+| --- | --- |
+| Position | `absolute` |
+| Left/right/top/bottom | `0%` |
+| Background | `linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF` |
+| Border radius | `8px` |
+
+Shared text values:
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer name | `Tab 2` |
+| Width | `33px` |
+| Height | `14px` |
+| Left | `40px` |
+| Top | `13px` |
+| Font family | Lato |
+| Font style | normal |
+| Font weight | `900` |
+| Font size | `12px` |
+| Line height | `14px` |
+| Text transform | uppercase |
+| Color | `#5E81F4` |
+
+Shared icon values:
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer name | `ico` |
+| Width | `16px` |
+| Height | `16px` |
+| Left | `17px` |
+| Top | `12px` |
+| Font family | `la-solid-900` |
+| Font style | normal |
+| Font weight | `400` |
+| Font size | `16px` |
+| Line height | `16px` |
+| Text alignment | Center |
+| Color | `#5E81F4` |
 
 | Extraction item | Status |
 | --- | --- |
-| Visible variants/states | TBD |
-| Active/resting/disabled semantics | TBD |
-| Dimensions | TBD |
-| Typography | TBD |
-| Colors | TBD |
-| Border/radius | TBD |
-| Icon presence and icon source mapping, if applicable | TBD |
-| Spacing/gap/padding | TBD |
-| Focus/hover/active behavior | TBD |
+| Visible variants/states | Visible active/resting text and icon samples documented; disabled/focus/hover states TBD |
+| Active/resting/disabled semantics | Copied active/resting names documented; exact interaction semantics and disabled behavior TBD |
+| Dimensions | Group dimensions and copied item dimensions documented where provided; percentage offsets not converted to pixel dimensions |
+| Typography | Visible typography documented |
+| Colors | Visible colors documented |
+| Border/radius | Visible border/radius values documented |
+| Icon presence and icon source mapping, if applicable | Icon font-family `la-solid-900` documented as copied CSS evidence only; source/library mapping TBD |
+| Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
+| Focus/hover/active behavior | Active sample documented; focus/hover behavior TBD |
 | Responsive behavior | TBD |
 | Source metadata | TBD |
 | Component scope/API decision | TBD |
