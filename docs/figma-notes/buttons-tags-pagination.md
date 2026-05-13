@@ -188,6 +188,38 @@ preserved here and must not be used to reopen Plain Primary notes.
 | Label text alignment | Center |
 | Label color | `#FFFFFF` |
 
+### Red filled color option sample
+
+The red sample belongs visually to the same Color options group/row as the
+green sample. The Copy-as-CSS comment still says
+`Buttons / Plain / Primary / Active`; this naming mismatch is preserved here
+and must not be used to reopen Plain Primary notes. Based on the provided CSS
+values, this sample is structurally equivalent to the green sample except for
+background color and parent position.
+
+| Property | Confirmed value |
+| --- | --- |
+| Exact Color options variant/state name | TBD |
+| Copy-as-CSS comment | `Buttons / Plain / Primary / Active` |
+| Parent position | `absolute` |
+| Parent left | `23.77%` |
+| Parent right | `58.44%` |
+| Parent top | `65.3%` |
+| Parent bottom | `0.37%` |
+| Background | `#FF808B` |
+| Border radius | `8px` |
+| Label height | `17px` |
+| Label left | `32.65%` |
+| Label right | `32.65%` |
+| Label top | `calc(50% - 17px/2 - 0.5px)` |
+| Label font family | Lato |
+| Label font style | normal |
+| Label font weight | `700` |
+| Label font size | `14px` |
+| Label line height | `17px` |
+| Label text alignment | Center |
+| Label color | `#FFFFFF` |
+
 | Extraction item | Status |
 | --- | --- |
 | Variant/state names | TBD |
