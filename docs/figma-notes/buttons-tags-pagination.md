@@ -463,17 +463,75 @@ names remain TBD.
 
 ## Tags Extraction Notes
 
-Tags are not implementation-ready. No confirmed Tags-specific Figma values are
-available yet.
+Tags are not implementation-ready. The Copy-as-CSS block below is for the
+visible `Tags` group. Do not infer hover/resting/active semantics from internal
+layer names such as `bg hover`.
+
+### Tags group extraction sample
+
+Group container metadata:
+
+| Property | Confirmed value |
+| --- | --- |
+| Group name | `Tags` |
+| Position | `absolute` |
+| Width | `1141px` |
+| Height | `124px` |
+| Left | `149px` |
+| Top | `910px` |
+
+Group context metadata, not tag variants:
+
+| Context item | Confirmed values |
+| --- | --- |
+| Tags title | Height `24px`; left `0%`; right `97.2%`; top `calc(50% - 24px/2 - 18px)`; Lato normal `700`; `16px`; line-height `24px`; color `#1C1D21` |
+| Line | Left `0.09%`; right `0%`; top `0%`; bottom `98.39%`; border `1px solid #EEEEEE` |
+
+All visible regular tag labels use Lato normal `700`, `14px`, line-height
+`21px`. Text alignment is Center where present. All visible tag backgrounds use
+border-radius `8px`.
+
+| Variant | Parent position | Parent left | Parent right | Parent top | Parent bottom | Background | Label height | Label left | Label right | Label top | Label color |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Tags / Primary | `absolute` | `0%` | `92.64%` | `70.97%` | `0%` | `#5E81F4` | `21px` | `31px` | `31px` | `calc(50% - 21px/2 - 0.5px)` | `#FFFFFF` |
+| Tags / Blue | `absolute` | `10.78%` | `81.86%` | `70.97%` | `0%` | `linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF` | `21px` | `36.9%` | `36.9%` | `calc(50% - 21px/2 - 0.5px)` | `#5E81F4` |
+| Tags / LightBlue | `absolute` | `20.95%` | `71.69%` | `70.97%` | `0%` | `linear-gradient(0deg, rgba(64, 225, 250, 0.1), rgba(64, 225, 250, 0.1)), #FFFFFF` | `21px` | `36.9%` | `36.9%` | `calc(50% - 21px/2 - 0.5px)` | `#2CE5F6` |
+| Tags / Green | `absolute` | `31.64%` | `61%` | `70.97%` | `0%` | `linear-gradient(0deg, rgba(124, 231, 172, 0.1), rgba(124, 231, 172, 0.1)), #FFFFFF` | `21px` | `31px` | `31px` | `calc(50% - 21px/2 - 0.5px)` | `#7CE7AC` |
+| Tags / Yellow | `absolute` | `41.81%` | `50.83%` | `70.97%` | `0%` | `linear-gradient(0deg, rgba(244, 190, 94, 0.1), rgba(244, 190, 94, 0.1)), #FFFFFF` | `21px` | `31px` | `31px` | `calc(50% - 21px/2 - 0.5px)` | `#F4BE5E` |
+| Tags / Red | `absolute` | `52.5%` | `40.14%` | `70.97%` | `0%` | `linear-gradient(0deg, rgba(255, 128, 139, 0.1), rgba(255, 128, 139, 0.1)), #FFFFFF` | `21px` | `31px` | `31px` | `calc(50% - 21px/2 - 0.5px)` | `#FF808B` |
+| Tags / Grey | `absolute` | `62.66%` | `29.97%` | `70.97%` | `0%` | `#F5F5FA` | `21px` | `31px` | `31px` | `calc(50% - 21px/2 - 0.5px)` | `#8181A5` |
+| Tags / GreyEditable | `absolute` | `73.36%` | `19.28%` | `70.97%` | `0%` | `#F5F5FA` | `21px` | `20px` | None confirmed | `calc(50% - 21px/2 - 0.5px)` | `#8181A5` |
+
+Tags / GreyEditable label and close icon details:
+
+| Property | Confirmed value |
+| --- | --- |
+| Label width | `22px` |
+| Label height | `21px` |
+| Label left | `20px` |
+| Label top | `calc(50% - 21px/2 - 0.5px)` |
+| Label color | `#8181A5` |
+| Close icon present | yes |
+| Close width | `16px` |
+| Close height | `16px` |
+| Close right | `13px` |
+| Close top | `calc(50% - 16px/2)` |
+| Icon font family | `la-solid-900` |
+| Icon font style | normal |
+| Icon font weight | `400` |
+| Icon font size | `16px` |
+| Icon line height | `16px` |
+| Icon text alignment | Center |
+| Icon color | `#8181A5` |
 
 | Extraction item | Status |
 | --- | --- |
-| Variant/state names | TBD |
-| Colors per state | TBD |
-| Dimensions | TBD |
-| Typography | TBD |
-| Radius | TBD |
-| Close/icon behavior, if present | TBD |
+| Variant/state names | Visible tag variants documented; state semantics TBD |
+| Colors per state | Visible sample colors documented; additional states TBD |
+| Dimensions | Group dimensions documented; tag pixel dimensions not inferred from percentage positioning |
+| Typography | Visible regular tag label typography documented |
+| Radius | Visible tag background radius documented as `8px` |
+| Close/icon behavior, if present | Tags / GreyEditable close icon documented; other icon behavior TBD if present |
 | Selection/interaction behavior, if present | TBD |
 | Figma source metadata | TBD |
 | Whether Tags and Badge/status tag variants should be separate scopes | TBD |
