@@ -108,7 +108,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Color options | Partially documented / closed for now | Filled color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, source metadata, and icon/source details remain TBD | No |
 | Color outline | Partially documented / closed for now | Outline color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, and source metadata remain TBD | No |
 | Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
-| Pagination | Partially documented | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
+| Pagination | Partially documented / closed for now | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
 | Progress bars | Not ready | Extract dimensions, fill/background colors, radius, value states, and label behavior if present | No |
 | Tabs primary | Not ready | Extract tab states, dimensions, typography, active/resting colors, indicator values, and spacing | No |
 | Badge & status tag | Not ready | Extract status variants, colors, dimensions, typography, radius, and icon behavior if present | No |
@@ -662,6 +662,28 @@ Visible variants are `Pagination/Primary`, `Pagination/Boxed`, and
 | Responsive behavior | TBD |
 | Whether the three variants should become one component with variants or separate components later | TBD |
 | Figma source metadata | TBD |
+
+## Pagination Closure Notes
+
+- Pagination is sufficiently documented for preparation boundary purposes, but
+  not implementation-ready.
+- Confirmed visible variants are Pagination/Primary, Pagination/Boxed, and
+  Pagination/Fullsize.
+- Group metadata is documented.
+- Context title and line metadata are documented.
+- Visible typography is documented.
+- Visible colors/backgrounds are documented.
+- Visible controls/arrows/icons are documented.
+- Visible dimensions are documented where provided.
+- Exact state semantics remain TBD.
+- Disabled/hover behavior remains TBD.
+- Responsive behavior remains TBD.
+- Selection/current-page interaction behavior remains TBD.
+- Icon source mapping beyond copied `la-solid-900` remains TBD.
+- Figma source metadata remains TBD.
+- Whether the three variants become one component with variants or separate
+  components remains TBD.
+- Additional state colors/spacing beyond documented samples remain TBD.
 
 ## Implementation Readiness
 
