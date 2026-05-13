@@ -32,7 +32,7 @@ visual source of truth. Values that are not confirmed must remain marked as
 | Date picker | Partially documented / closed for now | Date picker overview documented; day-cell grid, date-picker/range/selected-date/navigation/slider behavior, responsive behavior, source metadata, and component API remain TBD | No |
 | Search fields, if present | Not ready | TBD | No |
 | Textarea, if present | Not ready | TBD | No |
-| Checkbox/radio/switch, if present | Partially documented / closed for now | Checkbox and Radio copied samples documented; Switch remains TBD; behavior, validation, accessibility, source metadata, and component API remain TBD | No |
+| Checkbox/radio/switch, if present | Partially documented | Checkbox, Radio, and Switch/Toggles copied samples documented; behavior, validation, accessibility, source metadata, and component API remain TBD | No |
 | Source metadata | Not ready | TBD | No |
 | Component scope/API decision | Not ready | TBD | No |
 
@@ -1324,7 +1324,8 @@ evidence and must not be normalized into behavior assumptions.
 
 - Checkbox and Radio samples are partially documented and closed for preparation
   boundary purposes, but Forms remain not implementation-ready.
-- Switch remains TBD and is not extracted.
+- This closure note covers Checkbox and Radio only; Switch/Toggles are
+  documented separately and are not closure-audited yet.
 - Confirmed sample coverage includes copied Checkbox and Radio groups, section
   titles, section lines, visible variants, copied dimensions, typography,
   colors, backgrounds, radii, opacity/mix values, and visible mark layers where
@@ -1338,6 +1339,126 @@ evidence and must not be normalized into behavior assumptions.
   behavior, source metadata, Auto Layout spacing/gap/padding, and component
   API/scope decisions remain TBD.
 - Additional element states remain TBD.
+
+## Forms Elements Toggles Extraction Notes
+
+Toggles samples are not implementation-ready. The extracted sample below
+documents copied Figma values only. Copied names such as `Toggles`,
+`Forms / Switches / Off`, `Forms / Switches / On`, `Rectangle 4`, `Oval 3`,
+`Disabled`, `Primary`, and `States` are preserved as Figma evidence and must
+not be normalized into behavior assumptions. Slider data from the pasted CSS is
+out of scope for this section.
+
+### Toggles group
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Toggles` |
+| Position | `absolute` |
+| Width | `1141px` |
+| Height | `143px` |
+| Left | `149px` |
+| Top | `724px` |
+
+### Toggles section title and line
+
+| Property | Confirmed value |
+| --- | --- |
+| Title layer/name | `Toggles` |
+| Title position | `absolute` |
+| Title height | `24px` |
+| Title left | `0%` |
+| Title right | `95.27%` |
+| Title top | `calc(50% - 24px/2 - 27.5px)` |
+| Title font | Lato normal `700`, `16px`, line-height `24px` |
+| Title color | `#1C1D21` |
+| Line layer/name | `Line` |
+| Line position | `absolute` |
+| Line left | `0.09%` |
+| Line right | `0%` |
+| Line top | `0%` |
+| Line bottom | `98.6%` |
+| Line border | `1px solid #EEEEEE` |
+
+### Disabled group
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Disabled` |
+| Position | `absolute` |
+| Left | `0.09%` |
+| Right | `85.1%` |
+| Top | `62.94%` |
+| Bottom | `0%` |
+
+| Label | Confirmed values |
+| --- | --- |
+| `ToggleOffDisabled` | Position `absolute`; width `111px`; height `18px`; left `58px`; top `calc(50% - 18px/2 - 15.5px)`; Source Sans Pro normal `400`, `14px`, line-height `18px`; color `#8181A5`; mix blend mode `normal`; opacity `0.7` |
+| `ToggleOnDisabled` | Position `absolute`; width `110px`; height `18px`; left `58px`; top `calc(50% - 18px/2 + 16.5px)`; Source Sans Pro normal `400`, `14px`, line-height `18px`; color `#1C1D21`; mix blend mode `normal`; opacity `0.7` |
+
+| Switch | Position offsets | Opacity/mix | Rectangle 4 values | Oval 3 values |
+| --- | --- | --- | --- | --- |
+| `Forms / Switches / Off` | Left `0%`; right `76.33%`; top `0%`; bottom `58.49%` | Mix blend mode `normal`; opacity `0.7` | Left/right/top/bottom `0%`; background `#F0F0F3`; radius `12px` | Left `10%`; right `50%`; top `13.64%`; bottom `13.64%`; background `#8181A5` |
+| `Forms / Switches / On` | Left `0%`; right `76.33%`; top `58.49%`; bottom `0%` | Mix blend mode `normal`; opacity `0.7` | Left/right/top/bottom `0%`; background `#5E81F4`; radius `12px` | Left `50%`; right `10%`; top `13.64%`; bottom `13.64%`; background `#FFFFFF` |
+
+### Primary group
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `Primary` |
+| Position | `absolute` |
+| Left | `34.27%` |
+| Right | `55.57%` |
+| Top | `62.94%` |
+| Bottom | `0%` |
+
+| Label | Confirmed values |
+| --- | --- |
+| `ToggleOff` | Position `absolute`; width `58px`; height `18px`; left `58px`; top `calc(50% - 18px/2 - 15.5px)`; Source Sans Pro normal `400`, `14px`, line-height `18px`; color `#8181A5` |
+| `ToggleOn` | Position `absolute`; width `57px`; height `18px`; left `58px`; top `calc(50% - 18px/2 + 16.5px)`; Source Sans Pro normal `400`, `14px`, line-height `18px`; color `#1C1D21` |
+
+| Switch | Position offsets | Rectangle 4 values | Oval 3 values |
+| --- | --- | --- | --- |
+| `Forms / Switches / Off` | Left `0%`; right `65.52%`; top `0%`; bottom `58.49%` | Left/right/top/bottom `0%`; background `#F0F0F3`; radius `12px` | Left `10%`; right `50%`; top `13.64%`; bottom `13.64%`; background `#8181A5` |
+| `Forms / Switches / On` | Left `0%`; right `65.52%`; top `58.49%`; bottom `0%` | Left/right/top/bottom `0%`; background `#5E81F4`; radius `12px` | Left `50%`; right `10%`; top `13.64%`; bottom `13.64%`; background `#FFFFFF` |
+
+### States group
+
+| Property | Confirmed value |
+| --- | --- |
+| Layer/name | `States` |
+| Position | `absolute` |
+| Left | `68.45%` |
+| Right | `17.35%` |
+| Top | `62.94%` |
+| Bottom | `0%` |
+
+| Label | Confirmed values |
+| --- | --- |
+| `ErrorToggleOff` | Position `absolute`; width `88px`; height `18px`; left `58px`; top `calc(50% - 18px/2 - 15.5px)`; Source Sans Pro normal `400`, `14px`, line-height `18px`; color `#FF808B` |
+| `SuccessToggleOn` | Position `absolute`; width `104px`; height `18px`; left `58px`; top `calc(50% - 18px/2 + 16.5px)`; Source Sans Pro normal `400`, `14px`, line-height `18px`; color `#8AF1B9` |
+
+| Switch | Position offsets | Rectangle 4 values | Oval 3 values |
+| --- | --- | --- | --- |
+| `Forms / Switches / Error` | Left `0%`; right `75.31%`; top `0%`; bottom `58.49%` | Left/right/top/bottom `0%`; background `#FF808B`; radius `12px` | Left `10%`; right `50%`; top `13.64%`; bottom `13.64%`; background `#FFFFFF` |
+| `Forms / Switches / Success` | Left `0%`; right `75.31%`; top `58.49%`; bottom `0%` | Left/right/top/bottom `0%`; background `#7CE7AC`; radius `12px` | Left `50%`; right `10%`; top `13.64%`; bottom `13.64%`; background `#FFFFFF` |
+
+### Toggles extraction status
+
+| Extraction item | Status |
+| --- | --- |
+| Visible variants/items | Disabled, Primary, and States copied samples documented; Slider remains out of scope |
+| Dimensions | Copied group dimensions documented where provided; percentage offsets not converted to pixel dimensions |
+| Typography | Visible Toggles section-title and label typography documented |
+| Colors | Visible track, thumb, label, line, error, and success colors documented |
+| Background/border/radius | Visible copied background and radius values documented |
+| Spacing/gap/padding | Copied absolute positions documented; Auto Layout spacing/gap/padding TBD |
+| Toggle on/off/disabled/error/success behavior | Copied layer names documented; behavior semantics TBD |
+| Accessibility behavior | TBD |
+| Validation semantics | TBD |
+| Responsive behavior | TBD |
+| Source metadata | TBD |
+| Component scope/API decision | TBD |
 
 ## Date Picker Overview Closure Notes
 
