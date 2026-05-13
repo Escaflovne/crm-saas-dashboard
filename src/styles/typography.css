@@ -1,0 +1,11 @@
+body {
+  background: var(--color-background-light);
+  color: var(--color-primary-dark);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-text-14);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-text-14);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
