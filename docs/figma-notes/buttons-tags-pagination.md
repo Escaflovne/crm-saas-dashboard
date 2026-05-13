@@ -109,7 +109,7 @@ padding/gap is a confirmed limitation and must not be invented.
 | Color outline | Partially documented / closed for now | Outline color samples documented; exact variant/state names, additional states, incomplete dimensions, selection behavior, and source metadata remain TBD | No |
 | Tags | Partially documented / closed for now | Visible tag variants documented; state semantics, additional states, selection/interaction behavior, source metadata, and Tags vs Badge/status tag scope separation remain TBD | No |
 | Pagination | Partially documented / closed for now | Visible Pagination variants documented; exact state semantics, disabled/hover behavior, responsive behavior, interaction behavior, icon source mapping, source metadata, and component scope remain TBD | No |
-| Progress bars | Not ready | Extract dimensions, fill/background colors, radius, value states, and label behavior if present | No |
+| Progress bars | Partially documented | Visible Progress bar variants documented; exact state/value semantics, pixel dimensions, labels, responsive behavior, source metadata, and component scope remain TBD | No |
 | Tabs primary | Not ready | Extract tab states, dimensions, typography, active/resting colors, indicator values, and spacing | No |
 | Badge & status tag | Not ready | Extract status variants, colors, dimensions, typography, radius, and icon behavior if present | No |
 | Token mapping review | Deferred | Map confirmed extracted values to implementation token names after extraction is complete | No |
@@ -687,20 +687,63 @@ Visible variants are `Pagination/Primary`, `Pagination/Boxed`, and
 
 ## Progress Bars Extraction Notes
 
-Progress bars are not implementation-ready. No confirmed Progress
-bar-specific Figma values are available yet.
+Progress bars are not implementation-ready. The Copy-as-CSS block below is for
+the visible `Progress` group. Do not infer value percentages beyond the copied
+right offsets, and do not infer label/value behavior because no visible labels
+or values are confirmed inside the bars.
+
+### Progress bars group extraction sample
+
+Group container metadata:
+
+| Property | Confirmed value |
+| --- | --- |
+| Group name | `Progress` |
+| Position | `absolute` |
+| Width | `1141px` |
+| Height | `113px` |
+| Left | `149px` |
+| Top | `1433px` |
+
+Group context metadata, not progress bar variants:
+
+| Context item | Confirmed values |
+| --- | --- |
+| ProgressBars title | Lato normal `700`; `16px`; line-height `24px`; color `#1C1D21` |
+| Line | Border `1px solid #EEEEEE` |
+
+Visible variants are `Progress Bars / High`, `Progress Bars / Medium`,
+`Progress Bars / Low`, `Progress Bars/Full`, `Progress Bars / Primary`, and
+`Progress Bars/Resting`.
+
+Shared confirmed facts:
+
+- Track/background color is `#F5F5FA` where visible.
+- Fill radius is `3px`.
+- Background radius is `3px`.
+- No visible labels/values are confirmed inside the bars.
+
+| Variant | Parent left | Parent right | Parent top | Parent bottom | Background color | Background radius | Fill left | Fill right | Fill top | Fill bottom | Fill color | Fill radius | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Progress Bars / High | `0.09%` | `73.62%` | `96.46%` | `0%` | `#F5F5FA` | `3px` | `0%` | `16.5%` | `0%` | `0%` | `#7CE7AC` | `3px` | None |
+| Progress Bars / Medium | `0.09%` | `73.62%` | `77.88%` | `18.58%` | `#F5F5FA` | `3px` | `0%` | `40.78%` | `0%` | `0%` | `#F4BE5E` | `3px` | None |
+| Progress Bars / Low | `36.9%` | `36.81%` | `77.88%` | `18.58%` | `#F5F5FA` | `3px` | `0%` | `77.67%` | `0%` | `0%` | `#FF808B` | `3px` | None |
+| Progress Bars/Full | `73.71%` | `0%` | `77.88%` | `18.58%` | None visible in copied values | None visible in copied values | `0%` | `0%` | `0%` | `0%` | `#7CE7AC` | `3px` | No background layer is visible in the copied values |
+| Progress Bars / Primary | `36.9%` | `36.81%` | `96.46%` | `0%` | `#F5F5FA` | `3px` | `0%` | `20.39%` | `0%` | `0%` | `#5E81F4` | `3px` | None |
+| Progress Bars/Resting | `73.71%` | `0%` | `96.46%` | `0%` | `#F5F5FA` | `3px` | None visible in copied values | None visible in copied values | None visible in copied values | None visible in copied values | None visible in copied values | None visible in copied values | No fill layer is visible in the copied values |
 
 | Extraction item | Status |
 | --- | --- |
-| Variant names | TBD |
-| Track dimensions | TBD |
-| Fill dimensions or percentage/value examples | TBD |
-| Track/background colors | TBD |
-| Fill colors | TBD |
-| Radius | TBD |
+| Variant names | Visible variants documented; exact state/value semantics TBD |
+| Track dimensions | Track pixel dimensions TBD; dimensions not inferred from percentages |
+| Fill dimensions or percentage/value examples | Copied fill offsets documented where visible; actual percentage/value meaning TBD |
+| Track/background colors | Visible track/background colors documented where present |
+| Fill colors | Visible fill colors documented where present |
+| Radius | Visible fill/background radius documented as `3px` |
 | Value states | TBD |
-| Label presence and label typography, if present | TBD |
-| Spacing/alignment | TBD |
+| Label presence and label typography, if present | No visible labels/values confirmed inside the bars; label behavior TBD |
+| Spacing/alignment | Copied positioning documented; spacing/alignment beyond copied positioning TBD |
+| Responsive behavior | TBD |
 | Figma source metadata | TBD |
 | Whether Progress bars are one component with variants or multiple component scopes | TBD |
 
