@@ -1,6 +1,8 @@
 .authLayout {
+  margin: 0 auto;
   min-height: 100vh;
-  background: var(--color-bg-brand);
+  max-width: 1440px;
+  background: var(--color-bg-surface);
 }
 
 .authLayout__form {
@@ -22,15 +24,16 @@
   }
 
   .authLayout__form {
-    width: min(100%, 480px);
-    flex: 0 0 480px;
-    padding: var(--space-16) var(--space-10); /* visual approximation */
+    flex: 0 0 56%;
+    padding: var(--space-16) var(--space-12); /* visual approximation */
   }
 
   .authLayout__visual {
+    position: relative;
     display: flex;
     min-width: 0;
-    flex: 1;
+    min-height: 100vh;
+    flex: 0 0 44%;
     align-items: center;
     justify-content: center;
     overflow: hidden;

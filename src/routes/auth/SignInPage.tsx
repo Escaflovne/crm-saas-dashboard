@@ -10,6 +10,9 @@ import { Button } from "../../components/ui/Button";
 import { Input } from "../../components/ui/Input";
 import styles from "./SignInPage.module.css";
 
+void emailIcon;
+void lockIcon;
+
 export default function SignInPage() {
   return (
     <AuthLayout
@@ -48,8 +51,13 @@ export default function SignInPage() {
             label="Email"
             type="email"
             name="email"
-            defaultValue="john.doe@gmail.com"
-            rightSlot={<img src={emailIcon} alt="" aria-hidden="true" />}
+            placeholder="Enter your email"
+            rightSlot={
+              <span
+                className={`${styles.signIn__inputIcon} ${styles["signIn__inputIcon--email"]}`}
+                aria-hidden="true"
+              />
+            }
           />
 
           <Input
@@ -58,7 +66,12 @@ export default function SignInPage() {
             type="password"
             name="password"
             placeholder="Start typing..."
-            rightSlot={<img src={lockIcon} alt="" aria-hidden="true" />}
+            rightSlot={
+              <span
+                className={`${styles.signIn__inputIcon} ${styles["signIn__inputIcon--lock"]}`}
+                aria-hidden="true"
+              />
+            }
           />
 
           <div className={styles.signIn__options}>
