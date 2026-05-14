@@ -19,6 +19,17 @@ this repository.
 - Do not change `package.json` unless explicitly requested.
 - Do not make commits unless explicitly approved.
 
+## Anti-Loop Rules
+
+- Do NOT create proposal, review, approval, audit, evidence, or readiness
+  documents for any change. These files are process theater, not engineering.
+- Do NOT create any new .md file unless the ticket explicitly says
+  "create file [name]".
+- Do NOT ask for approval or permission before implementing a nano-ticket.
+  Implement directly.
+- When in doubt: write code, not documentation.
+- One ticket = one implementation + verification. Nothing else.
+
 ## Current Migration Target
 
 - The target application is a Vite React TypeScript SPA.
