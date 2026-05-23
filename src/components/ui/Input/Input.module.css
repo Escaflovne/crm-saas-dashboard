@@ -5,7 +5,7 @@
 
 .input__label {
   color: var(--color-text-muted);
-  font-size: var(--font-size-text-14);
+  font-size: var(--font-size-body-md);
   font-weight: var(--font-weight-regular);
 }
 
@@ -22,7 +22,7 @@
   background: transparent;
   color: var(--color-text-primary);
   font-family: var(--font-family-primary);
-  font-size: var(--font-size-text-14);
+  font-size: var(--font-size-body-md);
 }
 
 .input__field:focus {
@@ -44,5 +44,5 @@
 .input__error {
   margin: var(--space-1) 0 0;
   color: var(--color-secondary-red);
-  font-size: var(--font-size-text-12);
+  font-size: var(--font-size-body-sm);
 }

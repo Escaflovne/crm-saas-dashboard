@@ -24,7 +24,7 @@
 .signIn__subtitle {
   margin: 0;
   color: var(--color-text-muted);
-  font-size: var(--font-size-text-14);
+  font-size: var(--font-size-body-md);
   font-weight: var(--font-weight-regular);
 }
 
@@ -50,7 +50,7 @@
 
 .signIn__link {
   color: var(--color-text-brand);
-  font-size: var(--font-size-text-14);
+  font-size: var(--font-size-body-md);
   text-decoration: none;
 }
 
@@ -99,7 +99,7 @@
 .signIn__socialText {
   margin: 0;
   color: var(--color-text-muted);
-  font-size: var(--font-size-text-14);
+  font-size: var(--font-size-body-md);
 }
 
 .signIn__socialButtons {

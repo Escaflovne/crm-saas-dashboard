@@ -37,9 +37,6 @@
   --radius-lg: 8px;
   --radius-xl: 12px;
 
-  /* Shadow primitives */
-  --shadow-panel: 0px 6px 20px rgba(153, 155, 168, 0.1);
-
   /* Spacing scale */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -73,15 +70,27 @@
   --font-size-caption: 0.875rem;
   --line-height-caption: 17px;
   --letter-spacing-caption: 0px;
-  --font-size-button-label-14: 0.875rem;
-  --font-size-button-label-12: 0.75rem;
   --line-height-button-label-12: 14px;
-  --font-size-text-14: 0.875rem;
-  --line-height-text-14: 21px;
-  --font-size-text-12: 0.75rem;
-  --line-height-text-12: 18px;
-  --font-size-secondary-text-14: 0.875rem;
-  --line-height-secondary-text-14: 21px;
-  --font-size-secondary-text-12: 0.75rem;
-  --line-height-secondary-text-12: 18px;
+  --font-size-body-md: 0.875rem;
+  --line-height-body-md: 21px;
+  --font-size-body-sm: 0.75rem;
+  --line-height-body-sm: 18px;
+
+  /* Motion */
+  --transition-default: 160ms ease;
+
+  /* Shadows */
+  --shadow-sm: 0px 2px 8px rgba(153, 155, 168, 0.08);
+  --shadow-md: 0px 6px 20px rgba(153, 155, 168, 0.1);
+  --shadow-lg: 0px 12px 32px rgba(153, 155, 168, 0.18);
+
+  /* Button hover (Primary Dark at 10% opacity) */
+  --color-button-hover: rgba(28, 29, 33, 0.1);
+
+  /* Secondary color backgrounds (light/pastel variants for Tags) */
+  --color-secondary-yellow-bg: rgba(244, 190, 94, 0.12);
+  --color-secondary-green-bg: rgba(124, 231, 172, 0.12);
+  --color-secondary-red-bg: rgba(255, 128, 139, 0.12);
+  --color-secondary-purple-bg: rgba(150, 152, 214, 0.12);
+  --color-secondary-cyan-bg: rgba(64, 225, 250, 0.12);
 }
